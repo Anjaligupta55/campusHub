@@ -2232,20 +2232,25 @@ export default function App() {
           <div className="profile-wrapper-split">
             {/* Left sidebar card */}
             <div className="profile-details-card">
-              <div className="profile-avatar-block">
-                <img src={currentUser?.avatar || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"} alt="User avatar" />
-                <span className="verified-student-badge">✓ Verified Student ID</span>
-                <h3>{currentUser?.name || "Rajesh Kumar"}</h3>
-                <p>Department: {studentDept} • {studentSem}</p>
-                {currentUser && (
+              {currentUser ? (
+                <div className="profile-avatar-block">
+                  <img src={currentUser?.avatar || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"} alt="User avatar" />
+                  <span className="verified-student-badge">✓ Verified Student ID</span>
+                  <h3>{currentUser?.name}</h3>
+                  <p>Department: {studentDept} • {studentSem}</p>
                   <button className="btn btn-secondary" onClick={() => {
                     setCurrentUser(null);
                     addToast('Logged out successfully');
                   }} style={{marginTop: '0.5rem'}}>
                     Logout
                   </button>
-                )}
               </div>
+              ) : (
+                <div className="profile-login-prompt" style={{textAlign: 'center', padding: '2rem'}}>
+                  <p>Please sign in to view your profile.</p>
+                  <button className="btn btn-primary" onClick={() => setLoginOpen(true)}>Sign In / Sign Up</button>
+                </div>
+              )}
 
               {/* Info Preferences forms */}
               <div className="profile-pref-form">
