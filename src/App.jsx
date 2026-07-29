@@ -105,96 +105,96 @@ const RAW_CATALOG = {
     label: '📚 Study Essentials',
     items: [
       { name: 'Notebooks', price: 60, original: 80, img: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Registers', price: 80, original: 100, img: 'https://images.unsplash.com/photo-1594671581654-cc7ed83167bb?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Registers', price: 80, original: 100, img: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80&w=400' },
       { name: 'Pens', price: 10, original: 15, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' },
       { name: 'Pencils', price: 5, original: 8, img: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Highlighters', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Markers', price: 25, original: 30, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Highlighters', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Markers', price: 25, original: 30, img: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=400' },
       { name: 'Sticky Notes', price: 45, original: 60, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Index Cards', price: 35, original: 50, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Index Cards', price: 35, original: 50, img: 'https://images.unsplash.com/photo-1605870445919-838d190e8e1b?auto=format&fit=crop&q=80&w=400' },
       { name: 'Files & Folders', price: 75, original: 100, img: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400' },
       { name: 'Drawing Sheets', price: 50, original: 70, img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&q=80&w=400' },
       { name: 'Graph Paper', price: 20, original: 30, img: 'https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Lab Record Books', price: 120, original: 150, img: 'https://images.unsplash.com/photo-1594671581654-cc7ed83167bb?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Calculators', price: 399, original: 499, img: 'https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Geometry Box', price: 150, original: 180, img: 'https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Lab Record Books', price: 120, original: 150, img: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Calculators', price: 399, original: 499, img: 'https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Geometry Box', price: 150, original: 180, img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=400' },
       { name: 'Scientific Calculator', price: 1299, original: 1599, img: 'https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&q=80&w=400' },
       { name: 'Whiteboard', price: 349, original: 499, img: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Whiteboard Marker', price: 25, original: 35, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Eraser', price: 5, original: 10, img: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Sharpener', price: 5, original: 10, img: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Scale', price: 15, original: 20, img: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Glue Stick', price: 25, original: 35, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Tape', price: 15, original: 20, img: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Whiteboard Marker', price: 25, original: 35, img: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Eraser', price: 5, original: 10, img: 'https://images.unsplash.com/photo-1602722851756-3c224213d256?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Sharpener', price: 5, original: 10, img: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1141?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Scale', price: 15, original: 20, img: 'https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Glue Stick', price: 25, original: 35, img: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Tape', price: 15, original: 20, img: 'https://images.unsplash.com/photo-1596701358999-70233076ff7a?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   electronics: {
     label: '💻 Electronics & Accessories',
     items: [
-      { name: 'Laptop Charger', price: 1200, original: 1500, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Mobile Charger', price: 499, original: 699, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Charging Cable', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'USB Hub', price: 599, original: 799, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Pendrive', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'SSD', price: 3499, original: 4999, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Laptop Charger', price: 1200, original: 1500, img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Mobile Charger', price: 499, original: 699, img: 'https://images.unsplash.com/photo-1619176317589-cf284bfdb582?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Charging Cable', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1541667590-f769d6c25c95?auto=format&fit=crop&q=80&w=400' },
+      { name: 'USB Hub', price: 599, original: 799, img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Pendrive', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1601524909162-be87252be298?auto=format&fit=crop&q=80&w=400' },
+      { name: 'SSD', price: 3499, original: 4999, img: 'https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?auto=format&fit=crop&q=80&w=400' },
       { name: 'Mouse', price: 299, original: 499, img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=400' },
       { name: 'Keyboard', price: 599, original: 999, img: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=80&w=400' },
       { name: 'Mouse Pad', price: 150, original: 250, img: 'https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Laptop Stand', price: 799, original: 999, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Laptop Stand', price: 799, original: 999, img: 'https://images.unsplash.com/photo-1625766763788-95dcce9bf5ac?auto=format&fit=crop&q=80&w=400' },
       { name: 'Cooling Pad', price: 899, original: 1199, img: 'https://images.unsplash.com/photo-1591871937573-74dbba515c4c?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Earphones', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Earphones', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?auto=format&fit=crop&q=80&w=400' },
       { name: 'Headphones', price: 1499, original: 1999, img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Webcam', price: 1500, original: 2200, img: 'https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Power Bank', price: 1299, original: 1799, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'HDMI Cable', price: 250, original: 350, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Extension Board', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Adapter', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Multi Plug', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Webcam', price: 1500, original: 2200, img: 'https://images.unsplash.com/photo-1602758153401-44754320f666?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Power Bank', price: 1299, original: 1799, img: 'https://images.unsplash.com/photo-1609592806453-69b1896ec37c?auto=format&fit=crop&q=80&w=400' },
+      { name: 'HDMI Cable', price: 250, original: 350, img: 'https://images.unsplash.com/photo-1558244661-d248897f7bc4?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Extension Board', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1624996379697-f01d168b1a52?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Adapter', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1592832122594-c0c6bad74837?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Multi Plug', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1585695029497-6a457497d391?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   hostel: {
     label: '🏠 Hostel Room Essentials',
     items: [
-      { name: 'Bucket', price: 150, original: 200, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Mug', price: 30, original: 50, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Hangers', price: 99, original: 150, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Lock', price: 180, original: 250, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Laundry Basket', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Clothes Drying Rope', price: 49, original: 80, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Bucket', price: 150, original: 200, img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Mug', price: 30, original: 50, img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Hangers', price: 99, original: 150, img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Lock', price: 180, original: 250, img: 'https://images.unsplash.com/photo-1610484826967-09c5720778c7?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Laundry Basket', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1595341888016-a392efc50346?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Clothes Drying Rope', price: 49, original: 80, img: 'https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?auto=format&fit=crop&q=80&w=400' },
       { name: 'Bedsheet', price: 399, original: 599, img: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Pillow Cover', price: 99, original: 150, img: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Blanket', price: 899, original: 1299, img: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Mattress Protector', price: 499, original: 799, img: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Pillow Cover', price: 99, original: 150, img: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Blanket', price: 899, original: 1299, img: 'https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Mattress Protector', price: 499, original: 799, img: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=400' },
       { name: 'Table Lamp', price: 450, original: 600, img: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Study Lamp', price: 399, original: 550, img: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Study Lamp', price: 399, original: 550, img: 'https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80&w=400' },
       { name: 'Desk Organizer', price: 249, original: 349, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Dustbin', price: 80, original: 120, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Storage Box', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Shoe Rack', price: 599, original: 799, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Mirror', price: 150, original: 250, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Dustbin', price: 80, original: 120, img: 'https://images.unsplash.com/photo-1574966737967-df5072049e6f?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Storage Box', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Shoe Rack', price: 599, original: 799, img: 'https://images.unsplash.com/photo-1596079890744-c1a0462d0975?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Mirror', price: 150, original: 250, img: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   personal: {
     label: '🧴 Personal Care',
     items: [
       { name: 'Toothbrush', price: 30, original: 40, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Toothpaste', price: 90, original: 110, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Shampoo', price: 180, original: 220, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Conditioner', price: 199, original: 250, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Soap', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Face Wash', price: 150, original: 199, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Moisturizer', price: 199, original: 249, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Comb', price: 20, original: 30, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Hair Oil', price: 99, original: 120, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Razor', price: 80, original: 100, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Shaving Cream', price: 110, original: 140, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Towel', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Nail Cutter', price: 50, original: 75, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Deodorant', price: 199, original: 249, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Sanitizer', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Wet Wipes', price: 60, original: 80, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Tissue Paper', price: 50, original: 70, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Cotton Buds', price: 30, original: 45, img: 'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Toothpaste', price: 90, original: 110, img: 'https://images.unsplash.com/photo-1559599141-3816a0843111?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Shampoo', price: 180, original: 220, img: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Conditioner', price: 199, original: 250, img: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Soap', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1607006342456-ba275cd3a7b6?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Face Wash', price: 150, original: 199, img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Moisturizer', price: 199, original: 249, img: 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Comb', price: 20, original: 30, img: 'https://images.unsplash.com/photo-1590156546946-ce55a12a6a5d?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Hair Oil', price: 99, original: 120, img: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Razor', price: 80, original: 100, img: 'https://images.unsplash.com/photo-1613679021487-22485458f2f6?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Shaving Cream', price: 110, original: 140, img: 'https://images.unsplash.com/photo-1626017122180-2a74c10a46f7?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Towel', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Nail Cutter', price: 50, original: 75, img: 'https://images.unsplash.com/photo-1628149455678-de663e0dc9c4?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Deodorant', price: 199, original: 249, img: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Sanitizer', price: 40, original: 50, img: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Wet Wipes', price: 60, original: 80, img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Tissue Paper', price: 50, original: 70, img: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Cotton Buds', price: 30, original: 45, img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   clothing: {
@@ -202,25 +202,25 @@ const RAW_CATALOG = {
     items: [
       { name: 'College Hoodie', price: 1299, original: 1699, img: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=400' },
       { name: 'T-Shirts', price: 299, original: 499, img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Socks', price: 99, original: 149, img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Slippers', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Raincoat', price: 499, original: 699, img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Umbrella', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Laundry Bag', price: 149, original: 199, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Socks', price: 99, original: 149, img: 'https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Slippers', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Raincoat', price: 499, original: 699, img: 'https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Umbrella', price: 299, original: 399, img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Laundry Bag', price: 149, original: 199, img: 'https://images.unsplash.com/photo-1616906757947-fdf20dc55806?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   kitchen: {
     label: '🍽 Kitchen & Utility',
     items: [
-      { name: 'Electric Kettle', price: 799, original: 1199, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Electric Kettle', price: 799, original: 1199, img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&q=80&w=400' },
       { name: 'Coffee Mug', price: 150, original: 200, img: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=400' },
       { name: 'Water Bottle', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Lunch Box', price: 249, original: 349, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Spoon Set', price: 99, original: 149, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Plate', price: 80, original: 120, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Bowl', price: 60, original: 90, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Lunch Box', price: 249, original: 349, img: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Spoon Set', price: 99, original: 149, img: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Plate', price: 80, original: 120, img: 'https://images.unsplash.com/photo-1589589982755-d4122dcc9a3d?auto=format&fit=crop&q=80&w=400' },
+      { name: 'Bowl', price: 60, original: 90, img: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=400' },
       { name: 'Flask', price: 499, original: 699, img: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&q=80&w=400' },
-      { name: 'Storage Containers', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400' }
+      { name: 'Storage Containers', price: 199, original: 299, img: 'https://images.unsplash.com/photo-1539683255143-73a6b838b106?auto=format&fit=crop&q=80&w=400' }
     ]
   },
   printing: {
@@ -498,6 +498,31 @@ export default function App() {
   const [wishlistOpen, setWishlistOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  // Authentication & Signup
+  const [authMode, setAuthMode] = useState('login'); // 'login' | 'signup'
+  const [signupName, setSignupName] = useState('');
+  const [signupEmail, setSignupEmail] = useState('');
+  const [signupPassword, setSignupPassword] = useState('');
+  const [signupBlock, setSignupBlock] = useState('H-4');
+  const [signupRoom, setSignupRoom] = useState('');
+
+  // Checkout & Payment
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState('card'); // 'card' | 'upi' | 'wallet' | 'cod'
+  const [paymentCardNo, setPaymentCardNo] = useState('');
+  const [paymentCardExpiry, setPaymentCardExpiry] = useState('');
+  const [paymentCardCvv, setPaymentCardCvv] = useState('');
+  const [paymentCardName, setPaymentCardName] = useState('');
+  const [paymentUpiId, setPaymentUpiId] = useState('');
+  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+
+  // Dynamic Orders history
+  const [orders, setOrders] = useState([
+    { id: 'CH-83920', date: '2026-07-29', total: 430, location: 'Hostel Block H-4, Room 302', status: 'shipping', items: 'Trimax Pens, Classmate Notebooks', runner: 'Sarah M. (Junior)' },
+    { id: 'CH-83815', date: '2026-07-15', total: 1299, location: 'Hostel Block H-4, Room 302', status: 'completed', items: 'Official Varsity Hoodie', runner: 'Sarah M. (Junior)' },
+    { id: 'CH-83601', date: '2026-06-12', total: 180, location: 'Central Library Desk 12', status: 'completed', items: 'Notebooks (Pack of 6)', runner: 'Daniel T. (Sophomore)' }
+  ]);
+
   const [currentTab, setCurrentTab] = useState('home'); // 'home' | 'blinkit_store' | 'admin_dashboard'
   const [activeCategory, setActiveCategory] = useState('study');
   const [blinkitSearchQuery, setBlinkitSearchQuery] = useState('');
@@ -507,6 +532,47 @@ export default function App() {
   ]);
   const [aiInput, setAiInput] = useState('');
   const [adminActiveTab, setAdminActiveTab] = useState('revenue');
+
+  // Printing Hub States
+  const [printFile, setPrintFile] = useState(null);
+  const [printPages, setPrintPages] = useState(10);
+  const [printColor, setPrintColor] = useState('bw');
+  const [printBinding, setPrintBinding] = useState('spiral');
+  const [printLamination, setPrintLamination] = useState(false);
+
+  // Marketplace Listings State
+  const [marketplaceItems, setMarketplaceItems] = useState([
+    { id: 'm-1', title: 'Thomas Calculus (14th Edition)', category: 'marketplace', price: 350, originalPrice: 850, image: 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=400', desc: 'Slightly used engineering textbook, ideal for first year calculations.', seller: 'Sarah M. (CS, Junior)', condition: 'Good' },
+    { id: 'm-2', title: 'Casio Scientific Calculator FX-991EX', category: 'marketplace', price: 500, originalPrice: 1200, image: 'https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&q=80&w=400', desc: 'Engineers standard scientific calculator. Fully working, batteries included.', seller: 'Rajesh K. (EE, Senior)', condition: 'Excellent' },
+    { id: 'm-3', title: 'White Chemistry Lab Coat', category: 'marketplace', price: 150, originalPrice: 300, image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400', desc: 'Size M, slightly stained near pockets, washed and sanitized.', seller: 'Daniel T. (Bio, Sophomore)', condition: 'Fair' },
+    { id: 'm-4', title: 'Hostel Desk Table Organizer', category: 'marketplace', price: 180, originalPrice: 400, image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400', desc: 'Wooden modular desk storage box for pencils, books, and phone stand.', seller: 'Pooja V. (Mech, Senior)', condition: 'Excellent' }
+  ]);
+
+  // Services Booking States
+  const [bookingService, setBookingService] = useState('Laptop Cleaning');
+  const [bookingDate, setBookingDate] = useState('2026-07-30');
+  const [bookingTime, setBookingTime] = useState('10:00 AM - 12:00 PM');
+  const [bookingLoc, setBookingLoc] = useState('Hostel Block H-4');
+
+  // Student Profile preferences
+  const [studentBlock, setStudentBlock] = useState('H-4');
+  const [studentRoom, setStudentRoom] = useState('302');
+  const [studentDept, setStudentDept] = useState('Computer Science');
+  const [studentSem, setStudentSem] = useState('Semester 5');
+  const [walletBalance, setWalletBalance] = useState(450);
+  const [profileAddresses, setProfileAddresses] = useState([
+    'Hostel Block H-4, Room 302',
+    'Central Library, Cubicle 12'
+  ]);
+  const [newProfileAddress, setNewProfileAddress] = useState('');
+
+  const handlePrintFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setPrintFile(file.name);
+      addToast(`File selected: ${file.name}`);
+    }
+  };
 
   useEffect(() => {
     const container = document.querySelector('.product-detail-container');
@@ -593,6 +659,12 @@ export default function App() {
   };
 
   const handleAddToCart = (item, type = 'product') => {
+    if (!currentUser) {
+      addToast('Please login first to add items to your cart!', true);
+      setAuthMode('login');
+      setLoginOpen(true);
+      return;
+    }
     setCart(prev => {
       const existing = prev.find(i => i.id === item.id);
       if (existing) {
@@ -628,6 +700,12 @@ export default function App() {
   };
 
   const handleToggleWishlist = (itemId, itemTitle) => {
+    if (!currentUser) {
+      addToast('Please login first to add items to your wishlist!', true);
+      setAuthMode('login');
+      setLoginOpen(true);
+      return;
+    }
     setWishlist(prev => {
       const exists = prev.includes(itemId);
       if (exists) {
@@ -663,27 +741,10 @@ export default function App() {
     setSearchQuery(item.title);
     setShowSuggestions(false);
     
-    // Smooth scroll to featured products grid
-    const target = document.getElementById('featured-products');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-      setCategoryFilter('all');
-      
-      // Flash matching product border
-      setTimeout(() => {
-        const cards = document.querySelectorAll('.product-card');
-        cards.forEach(c => {
-          if (c.getAttribute('data-id') === item.id) {
-            c.style.borderColor = 'var(--primary)';
-            c.style.boxShadow = '0 0 0 3px var(--border-color-focus)';
-            setTimeout(() => {
-              c.style.borderColor = '';
-              c.style.boxShadow = '';
-            }, 2000);
-          }
-        });
-      }, 800);
-    }
+    // Switch to Dorm Store tab and populate query
+    setCurrentTab('dorm_store');
+    setBlinkitSearchQuery(item.title);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // --- MODAL SUBMISSIONS ---
@@ -704,8 +765,38 @@ export default function App() {
     setLoginPassword('');
   };
 
+  const handleSignupSubmit = (e) => {
+    e.preventDefault();
+    if (!signupName || !signupEmail || !signupPassword || !signupRoom) {
+      addToast('Please fill in all fields', true);
+      return;
+    }
+    // Update profile states
+    setStudentBlock(signupBlock);
+    setStudentRoom(signupRoom);
+    setCurrentUser({
+      name: signupName,
+      email: signupEmail,
+      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=40'
+    });
+    addToast(`Account created successfully! Welcome to CampusHub, ${signupName}.`);
+    setLoginOpen(false);
+    // Reset fields
+    setSignupName('');
+    setSignupEmail('');
+    setSignupPassword('');
+    setSignupBlock('H-4');
+    setSignupRoom('');
+  };
+
   const handleSellerSubmit = (e) => {
     e.preventDefault();
+    if (!currentUser) {
+      addToast('Please login first to list items!', true);
+      setAuthMode('login');
+      setLoginOpen(true);
+      return;
+    }
     if (!sellerName || !sellerDept || !sellerItem || !sellerPrice || !sellerDesc) {
       addToast('Please fill in all fields', true);
       return;
@@ -725,6 +816,23 @@ export default function App() {
       addToast('Please enter an Order ID', true);
       return;
     }
+    
+    // Check if it's a dynamic order ID from our orders state
+    const dynamicOrder = orders.find(o => o.id === code || o.id === `CH-${code}`);
+    if (dynamicOrder) {
+      setTrackStatusResult({
+        orderId: dynamicOrder.id,
+        estTime: dynamicOrder.status === 'completed' ? 'Delivered' : '15 Mins',
+        steps: [
+          { title: 'Order Confirmed', desc: 'Your payment was confirmed and order was received.', time: 'Today', status: 'completed' },
+          { title: 'Runner Dispatched', desc: `Delivery partner ${dynamicOrder.runner} assigned.`, time: 'Today', status: dynamicOrder.status === 'pending' ? 'active' : 'completed' },
+          { title: 'Out for Delivery', desc: `Rider heading to ${dynamicOrder.location}.`, time: 'Today', status: dynamicOrder.status === 'shipping' ? 'active' : dynamicOrder.status === 'completed' ? 'completed' : 'pending' },
+          { title: 'Delivered', desc: 'Order delivered to room floor.', time: dynamicOrder.status === 'completed' ? 'Today' : 'Pending', status: dynamicOrder.status === 'completed' ? 'completed' : 'pending' }
+        ]
+      });
+      return;
+    }
+
     if (code === 'CH-12345' || code === '12345') {
       setTrackStatusResult({
         orderId: 'CH-12345',
@@ -750,18 +858,51 @@ export default function App() {
   };
 
   const handleContactSeller = (seller, product) => {
+    if (!currentUser) {
+      addToast('Please login first to contact a seller!', true);
+      setAuthMode('login');
+      setLoginOpen(true);
+      return;
+    }
     addToast(`Chat request dispatched to ${seller} regarding "${product}"`);
   };
 
   const handleBookService = (title) => {
+    if (!currentUser) {
+      addToast('Please login first to book a service!', true);
+      setAuthMode('login');
+      setLoginOpen(true);
+      return;
+    }
     addToast(`Booking initiated for "${title}". Checkout scheduler slots!`);
+    
+    const newOrderId = `SRV-${Math.floor(10000 + Math.random() * 90000)}`;
+    const grandTotal = title.includes('Laptop') ? 799 : 
+                       title.includes('Keyboard') ? 199 : 
+                       title.includes('OS') ? 499 : 
+                       title.includes('Deep Cleaning') ? 299 :
+                       title.includes('Water Can') ? 50 : 99;
+
+    // Add to orders history
+    const newOrder = {
+      id: newOrderId,
+      date: new Date().toISOString().split('T')[0],
+      total: grandTotal,
+      location: `Hostel Block ${studentBlock}, Room ${studentRoom}`,
+      status: 'pending',
+      items: `Service Booking: ${title}`,
+      runner: 'Technician Assigned'
+    };
+
+    setOrders(prev => [newOrder, ...prev]);
+
     setTrackOpen(true);
     setTrackStatusResult({
-      orderId: 'SRV-BOOKED',
+      orderId: newOrderId,
       estTime: 'Today at 4:00 PM',
       steps: [
         { title: 'Booking Confirmed', desc: `Service request for "${title}" accepted`, time: 'Just now', status: 'completed' },
-        { title: 'Runner Dispatched', desc: 'Campus technician scheduled to head to your block', time: 'Pending', status: 'active' }
+        { title: 'Technician Dispatched', desc: 'Campus technician scheduled to head to your block', time: 'Pending', status: 'active' }
       ]
     });
   };
@@ -868,6 +1009,14 @@ export default function App() {
                 type="text"
                 value={searchQuery}
                 onChange={handleSearchChange}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    setShowSuggestions(false);
+                    setCurrentTab('dorm_store');
+                    setBlinkitSearchQuery(searchQuery);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
                 onFocus={() => { if (searchQuery.trim().length >= 2) setShowSuggestions(true); }}
                 placeholder="Search textbooks, calculators, cleanings..."
                 autoComplete="off"
@@ -906,10 +1055,13 @@ export default function App() {
 
           {/* Navigation Links */}
           <nav className="nav-links">
-            <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); setCurrentTab('blinkit_store'); }}>Blinkit Store</a>
-            <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); setSellerOpen(true); }}>Become a Seller</a>
-            <a href="#services" className="nav-link" onClick={() => setCurrentTab('home')}>Services</a>
-            <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); setTrackOpen(true); }}>Track Order</a>
+            <button className={`nav-link-btn ${currentTab === 'dorm_store' ? 'active' : ''}`} onClick={() => { setCurrentTab('dorm_store'); setBlinkitSearchQuery(''); }}>Store</button>
+            <button className={`nav-link-btn ${currentTab === 'printing' ? 'active' : ''}`} onClick={() => setCurrentTab('printing')}>Print</button>
+            <button className={`nav-link-btn ${currentTab === 'marketplace' ? 'active' : ''}`} onClick={() => setCurrentTab('marketplace')}>Market</button>
+            <button className={`nav-link-btn ${currentTab === 'services' ? 'active' : ''}`} onClick={() => setCurrentTab('services')}>Services</button>
+            <button className={`nav-link-btn ${currentTab === 'combos' ? 'active' : ''}`} onClick={() => setCurrentTab('combos')}>Combos</button>
+            <button className={`nav-link-btn ${currentTab === 'profile' ? 'active' : ''}`} onClick={() => setCurrentTab('profile')}>Profile</button>
+            <button className={`nav-link-btn ${currentTab === 'admin' ? 'active' : ''}`} onClick={() => { setCurrentTab('admin'); setAdminActiveTab('revenue'); }}>Admin</button>
           </nav>
 
           {/* Action Counters */}
@@ -1477,7 +1629,7 @@ export default function App() {
       </>
       )}
 
-      {currentTab === 'blinkit_store' && (
+      {currentTab === 'dorm_store' && (
         <div className="blinkit-store-container">
           {/* Header Bar */}
           <div className="blinkit-store-header-bar">
@@ -1496,337 +1648,1015 @@ export default function App() {
               )}
             </div>
 
-            {/* View/Dashboard Switch */}
-            <div className="store-view-toggle">
-              <button 
-                className={`toggle-view-btn ${adminActiveTab === 'store' ? 'active' : ''}`}
-                onClick={() => setAdminActiveTab('store')}
-              >
-                🏪 Browse Catalog
-              </button>
-              <button 
-                className={`toggle-view-btn ${adminActiveTab !== 'store' ? 'active' : ''}`}
-                onClick={() => setAdminActiveTab('revenue')}
-              >
-                📊 Admin Dashboard
-              </button>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <span className="blinkit-delivery-time">⏱ Deliver to Block {studentBlock} Room {studentRoom}</span>
             </div>
           </div>
 
           {/* Smart Search Tag suggestions */}
-          {adminActiveTab === 'store' && (
-            <div className="smart-search-tags">
-              <span className="smart-search-label">Try searching:</span>
-              <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Exam Kit')}>"Exam Kit"</button>
-              <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Hostel Essentials')}>"Hostel Essentials"</button>
-              <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Under 500')}>"Under ₹500"</button>
-              <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Laptop Accessories')}>"Laptop Accessories"</button>
+          <div className="smart-search-tags">
+            <span className="smart-search-label">Try searching:</span>
+            <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Exam Kit')}>"Exam Kit"</button>
+            <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Hostel Essentials')}>"Hostel Essentials"</button>
+            <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Under 500')}>"Under ₹500"</button>
+            <button className="search-tag-btn" onClick={() => setBlinkitSearchQuery('Laptop Accessories')}>"Laptop Accessories"</button>
+          </div>
+
+          {/* Promo Banner */}
+          <div className="blinkit-promo-banner">
+            <div className="promo-text">
+              <span className="badge badge-accent">Semester Opening Discount</span>
+              <h3>Flat 10% Off on Dorm Setup Kits</h3>
+              <p>UPI payments accepted. Delivery directly to your dorm room floor in 15 mins!</p>
             </div>
-          )}
+            <div className="promo-bg-badge">10% OFF</div>
+          </div>
 
-          {adminActiveTab === 'store' ? (
-            <>
-              {/* Promo Banner */}
-              <div className="blinkit-promo-banner">
-                <div className="promo-text">
-                  <span className="badge badge-accent">Flash Sale</span>
-                  <h3>Semester Opening Sale!</h3>
-                  <p>Subsidized student prices. Flat 10% off using UPI on all hostel and study combos!</p>
-                </div>
-                <div className="promo-bg-badge">10% OFF</div>
-              </div>
+          {/* Main Split Layout */}
+          <div className="blinkit-store-layout">
+            {/* Left Sidebar */}
+            <div className="blinkit-sidebar">
+              {Object.entries(RAW_CATALOG)
+                .filter(([key]) => ['study', 'electronics', 'hostel', 'personal', 'clothing', 'kitchen'].includes(key))
+                .map(([key, value]) => (
+                  <button 
+                    key={key}
+                    className={`blinkit-sidebar-item ${activeCategory === key ? 'active' : ''}`}
+                    onClick={() => { setActiveCategory(key); setBlinkitSearchQuery(''); }}
+                  >
+                    <span className="sidebar-emoji">{value.label.split(' ')[0]}</span>
+                    <span className="sidebar-text">{value.label.split(' ').slice(1).join(' ')}</span>
+                  </button>
+              ))}
+            </div>
 
-              {/* Main Split Layout */}
-              <div className="blinkit-store-layout">
-                {/* Left Sidebar */}
-                <div className="blinkit-sidebar">
-                  {Object.entries(RAW_CATALOG).map(([key, value]) => (
-                    <button 
-                      key={key}
-                      className={`blinkit-sidebar-item ${activeCategory === key ? 'active' : ''}`}
-                      onClick={() => { setActiveCategory(key); setBlinkitSearchQuery(''); }}
-                    >
-                      <span className="sidebar-emoji">{value.label.split(' ')[0]}</span>
-                      <span className="sidebar-text">{value.label.split(' ').slice(1).join(' ')}</span>
-                    </button>
-                  ))}
-                </div>
-
-                {/* Right Product Grid */}
-                <div className="blinkit-catalog-panel">
-                  <h2 className="catalog-category-title">
-                    {RAW_CATALOG[activeCategory].label} 
-                    {blinkitSearchQuery && <span className="search-results-label"> / Search results for "{blinkitSearchQuery}"</span>}
-                  </h2>
+            {/* Right Product Grid */}
+            <div className="blinkit-catalog-panel">
+              <h2 className="catalog-category-title">
+                {RAW_CATALOG[activeCategory]?.label || 'Store Essentials'} 
+                {blinkitSearchQuery && <span className="search-results-label"> / Search results for "{blinkitSearchQuery}"</span>}
+              </h2>
+              
+              <div className="blinkit-catalog-grid">
+                {(() => {
+                  let items = CATALOG_PRODUCTS.filter(p => p.category === activeCategory);
                   
-                  <div className="blinkit-catalog-grid">
-                    {(() => {
-                      // Filtering logic
-                      let items = CATALOG_PRODUCTS.filter(p => p.category === activeCategory);
-                      
-                      if (blinkitSearchQuery) {
-                        const query = blinkitSearchQuery.toLowerCase().trim();
-                        
-                        // Handle special smart filters
-                        if (query === 'under 500' || query === 'under ₹500') {
-                          items = CATALOG_PRODUCTS.filter(p => p.price < 500);
-                        } else if (query === 'laptop accessories') {
-                          items = CATALOG_PRODUCTS.filter(p => p.category === 'electronics' && (p.title.toLowerCase().includes('laptop') || p.title.toLowerCase().includes('mouse') || p.title.toLowerCase().includes('keyboard') || p.title.toLowerCase().includes('stand') || p.title.toLowerCase().includes('pad')));
-                        } else if (query === 'hostel essentials') {
-                          items = CATALOG_PRODUCTS.filter(p => p.category === 'hostel');
-                        } else if (query === 'exam kit') {
-                          items = CATALOG_PRODUCTS.filter(p => p.title.toLowerCase().includes('exam') || p.category === 'study');
-                        } else {
-                          // Standard title match
-                          items = CATALOG_PRODUCTS.filter(p => p.title.toLowerCase().includes(query) || p.categoryLabel.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query));
-                        }
-                      }
+                  if (blinkitSearchQuery) {
+                    const query = blinkitSearchQuery.toLowerCase().trim();
+                    
+                    if (query === 'under 500' || query === 'under ₹500') {
+                      items = CATALOG_PRODUCTS.filter(p => p.price < 500);
+                    } else if (query === 'laptop accessories') {
+                      items = CATALOG_PRODUCTS.filter(p => p.category === 'electronics' && (p.title.toLowerCase().includes('laptop') || p.title.toLowerCase().includes('mouse') || p.title.toLowerCase().includes('keyboard') || p.title.toLowerCase().includes('stand') || p.title.toLowerCase().includes('pad')));
+                    } else if (query === 'hostel essentials') {
+                      items = CATALOG_PRODUCTS.filter(p => p.category === 'hostel');
+                    } else if (query === 'exam kit') {
+                      items = CATALOG_PRODUCTS.filter(p => p.title.toLowerCase().includes('exam') || p.category === 'study');
+                    } else {
+                      items = CATALOG_PRODUCTS.filter(p => p.title.toLowerCase().includes(query) || p.categoryLabel.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query));
+                    }
+                  }
 
-                      if (items.length === 0) {
-                        return (
-                          <div className="empty-catalog-state">
-                            <svg width="48" height="48" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.602 10.602z" />
-                            </svg>
-                            <p>No products found matching your filter</p>
-                            <span>Try searching for something else or browse categories</span>
-                          </div>
-                        );
-                      }
+                  if (items.length === 0) {
+                    return (
+                      <div className="empty-catalog-state">
+                        <svg width="48" height="48" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.602 10.602z" />
+                        </svg>
+                        <p>No products found matching your filter</p>
+                        <span>Try searching for something else or browse categories</span>
+                      </div>
+                    );
+                  }
 
-                      return items.map(prod => {
-                        const cartItem = cart.find(i => i.id === prod.id);
-                        const qty = cartItem ? cartItem.quantity : 0;
-                        return (
-                          <div key={prod.id} className="blinkit-product-card" onClick={() => setSelectedProduct(prod)}>
-                            <div className="blinkit-product-img-box">
-                              <img src={prod.image} alt={prod.title} />
-                              {prod.originalPrice && prod.price < prod.originalPrice && (
-                                <span className="blinkit-disc-badge">
-                                  {((1 - prod.price / prod.originalPrice) * 100).toFixed(0)}% OFF
-                                </span>
+                  return items.map(prod => {
+                    const cartItem = cart.find(i => i.id === prod.id);
+                    const qty = cartItem ? cartItem.quantity : 0;
+                    return (
+                      <div key={prod.id} className="blinkit-product-card" onClick={() => setSelectedProduct(prod)}>
+                        <div className="blinkit-product-img-box">
+                          <img src={prod.image} alt={prod.title} />
+                          {prod.originalPrice && prod.price < prod.originalPrice && (
+                            <span className="blinkit-disc-badge">
+                              {((1 - prod.price / prod.originalPrice) * 100).toFixed(0)}% OFF
+                            </span>
+                          )}
+                        </div>
+                        <div className="blinkit-product-details">
+                          <span className="blinkit-delivery-time">⏱ {prod.delivery}</span>
+                          <h4 className="blinkit-product-title">{prod.title}</h4>
+                          <p className="blinkit-product-desc-short">{prod.desc}</p>
+                          <div className="blinkit-product-footer">
+                            <div className="blinkit-price-block">
+                              <span className="price">₹{prod.price}</span>
+                              {prod.originalPrice && <span className="original">₹{prod.originalPrice}</span>}
+                            </div>
+                            <div className="blinkit-add-action-box" onClick={(e) => e.stopPropagation()}>
+                              {qty === 0 ? (
+                                <button className="btn-blinkit-add-sm" onClick={() => handleAddToCart(prod, 'product')}>
+                                  ADD
+                                </button>
+                              ) : (
+                                <div className="blinkit-qty-controls-sm">
+                                  <button onClick={() => handleUpdateQty(prod.id, -1)}>−</button>
+                                  <span>{qty}</span>
+                                  <button onClick={() => handleUpdateQty(prod.id, 1)}>+</button>
+                                </div>
                               )}
                             </div>
-                            <div className="blinkit-product-details">
-                              <span className="blinkit-delivery-time">⏱ {prod.delivery}</span>
-                              <h4 className="blinkit-product-title">{prod.title}</h4>
-                              <p className="blinkit-product-desc-short">{prod.desc}</p>
-                              <div className="blinkit-product-footer">
-                                <div className="blinkit-price-block">
-                                  <span className="price">₹{prod.price}</span>
-                                  {prod.originalPrice && <span className="original">₹{prod.originalPrice}</span>}
-                                </div>
-                                <div className="blinkit-add-action-box" onClick={(e) => e.stopPropagation()}>
-                                  {qty === 0 ? (
-                                    <button className="btn-blinkit-add-sm" onClick={() => handleAddToCart(prod, prod.id.includes('combos') ? 'combo' : 'product')}>
-                                      ADD
-                                    </button>
-                                  ) : (
-                                    <div className="blinkit-qty-controls-sm">
-                                      <button onClick={() => handleUpdateQty(prod.id, -1)}>−</button>
-                                      <span>{qty}</span>
-                                      <button onClick={() => handleUpdateQty(prod.id, 1)}>+</button>
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
                           </div>
-                        );
-                      });
-                    })()}
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            /* Interactive Admin Dashboard */
-            <div className="admin-dashboard-container">
-              <div className="admin-dashboard-sidebar">
-                <button className={`admin-tab-btn ${adminActiveTab === 'revenue' ? 'active' : ''}`} onClick={() => setAdminActiveTab('revenue')}>📈 Revenue & Analytics</button>
-                <button className={`admin-tab-btn ${adminActiveTab === 'orders' ? 'active' : ''}`} onClick={() => setAdminActiveTab('orders')}>📦 Active Orders</button>
-                <button className={`admin-tab-btn ${adminActiveTab === 'delivery' ? 'active' : ''}`} onClick={() => setAdminActiveTab('delivery')}>🏃 Delivery Partners</button>
-              </div>
-              
-              <div className="admin-dashboard-content">
-                {adminActiveTab === 'revenue' && (
-                  <div className="admin-panel-fade">
-                    <h3 className="admin-section-title">Revenue & Analytics Dashboard</h3>
-                    <div className="admin-stats-grid">
-                      <div className="stat-card">
-                        <span>Daily Revenue</span>
-                        <strong>₹42,850</strong>
-                        <span className="trend positive">↑ 18% from yesterday</span>
-                      </div>
-                      <div className="stat-card">
-                        <span>Active Customers Today</span>
-                        <strong>312</strong>
-                        <span className="trend positive">↑ 8% from yesterday</span>
-                      </div>
-                      <div className="stat-card">
-                        <span>Average Basket Value</span>
-                        <strong>₹480</strong>
-                        <span className="trend negative">↓ 2% from last week</span>
-                      </div>
-                      <div className="stat-card">
-                        <span>Total Items In Stock</span>
-                        <strong>1,420</strong>
-                        <span className="trend normal">Steady</span>
-                      </div>
-                    </div>
-                    
-                    <div className="dashboard-chart-mock">
-                      <h4>Order Volume (Last 24 Hours)</h4>
-                      <div className="bar-chart-mock">
-                        <div className="chart-bar" style={{ height: '40%' }}><span>8 AM</span></div>
-                        <div className="chart-bar" style={{ height: '55%' }}><span>12 PM</span></div>
-                        <div className="chart-bar" style={{ height: '85%' }}><span>4 PM</span></div>
-                        <div className="chart-bar" style={{ height: '95%' }}><span>8 PM</span></div>
-                        <div className="chart-bar" style={{ height: '70%' }}><span>12 AM</span></div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {adminActiveTab === 'orders' && (
-                  <div className="admin-panel-fade">
-                    <h3 className="admin-section-title">Active Orders Status</h3>
-                    <table className="admin-orders-table">
-                      <thead>
-                        <tr>
-                          <th>Order ID</th>
-                          <th>Items</th>
-                          <th>Total Price</th>
-                          <th>Hostel / Block</th>
-                          <th>Runner</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>#CH-83920</td>
-                          <td>Trimax Pens, Classmate Notebooks</td>
-                          <td>₹430</td>
-                          <td>Hostel H-4, Room 302</td>
-                          <td>Sarah M. (Junior)</td>
-                          <td><span className="status-pill shipping">Out for Delivery</span></td>
-                        </tr>
-                        <tr>
-                          <td>#CH-83921</td>
-                          <td>Scientific Calculator, Files</td>
-                          <td>₹1374</td>
-                          <td>Hostel H-1, Room 104</td>
-                          <td>Daniel T. (Sophomore)</td>
-                          <td><span className="status-pill pending">Packing</span></td>
-                        </tr>
-                        <tr>
-                          <td>#CH-83922</td>
-                          <td>Laundry Basket, Bed Sheet</td>
-                          <td>₹698</td>
-                          <td>Hostel H-2, Room 410</td>
-                          <td>Pooja V. (Senior)</td>
-                          <td><span className="status-pill completed">Completed</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-
-                {adminActiveTab === 'delivery' && (
-                  <div className="admin-panel-fade">
-                    <h3 className="admin-section-title">Delivery Partner Runners</h3>
-                    <div className="runner-profiles-grid">
-                      <div className="runner-card">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" alt="Daniel" />
-                        <div className="runner-info">
-                          <strong>Daniel T. (Sophomore)</strong>
-                          <span>Active Orders: 1</span>
-                          <span>Rating: 4.8★</span>
-                          <span className="status active">Active on Shift</span>
                         </div>
                       </div>
-                      <div className="runner-card">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" alt="Sarah" />
-                        <div className="runner-info">
-                          <strong>Sarah M. (Junior)</strong>
-                          <span>Active Orders: 1</span>
-                          <span>Rating: 4.9★</span>
-                          <span className="status active">On Delivery</span>
-                        </div>
-                      </div>
-                      <div className="runner-card">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100" alt="Rajesh" />
-                        <div className="runner-info">
-                          <strong>Rajesh K. (Senior)</strong>
-                          <span>Active Orders: 0</span>
-                          <span>Rating: 4.7★</span>
-                          <span className="status inactive">Offline</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
+                    );
+                  });
+                })()}
               </div>
             </div>
-          )}
+          </div>
+        </div>
+      )}
 
-          {/* AI Shopping Assistant Widget */}
-          <div className={`ai-assistant-widget ${aiChatOpen ? 'expanded' : ''}`}>
-            {aiChatOpen ? (
-              <div className="ai-chat-window">
-                <div className="ai-chat-header">
-                  <h4>🧠 CampusHub AI Assistant</h4>
-                  <button className="ai-chat-close-btn" onClick={() => setAiChatOpen(false)}>×</button>
+      {/* 3. PRINTING HUB */}
+      {currentTab === 'printing' && (
+        <div className="printing-hub-container container">
+          <div className="printing-header">
+            <span className="badge badge-primary">🖨 Academic Printing</span>
+            <h2>Cloud Printing & Academic Services</h2>
+            <p>Upload your assignments, records, or slides and have them spiral bound and delivered directly to your desk.</p>
+          </div>
+
+          <div className="printing-grid">
+            {/* Upload & Configure panel */}
+            <div className="printing-config-card">
+              <h3>Configure Print Job</h3>
+              
+              <div className="print-form-group">
+                <label>Upload Document (PDF, DOCX)</label>
+                <input 
+                  type="file" 
+                  id="print-file-input" 
+                  style={{ display: 'none' }} 
+                  accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" 
+                  onChange={handlePrintFileChange} 
+                />
+                <div className="print-file-upload-box" onClick={() => document.getElementById('print-file-input').click()}>
+                  <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                  {printFile ? (
+                    <span className="upload-success-text">✓ {printFile} uploaded</span>
+                  ) : (
+                    <span>Click to upload file from device</span>
+                  )}
                 </div>
-                <div className="ai-chat-body">
-                  {aiMessages.map((msg, idx) => (
-                    <div key={idx} className={`chat-message ${msg.sender}`}>
-                      <div className="chat-bubble">{msg.text}</div>
+              </div>
+
+              <div className="print-form-group">
+                <label>Page Count</label>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <input 
+                    type="range" 
+                    min="1" 
+                    max="150" 
+                    value={printPages} 
+                    onChange={(e) => setPrintPages(parseInt(e.target.value))} 
+                    style={{ flex: 1, accentColor: 'var(--primary)' }}
+                  />
+                  <input 
+                    type="number" 
+                    value={printPages}
+                    onChange={(e) => setPrintPages(parseInt(e.target.value) || 1)}
+                    className="print-page-num-input"
+                  />
+                </div>
+              </div>
+
+              <div className="print-form-group">
+                <label>Color Options</label>
+                <div className="print-radio-group">
+                  <label className={`print-radio-card ${printColor === 'bw' ? 'active' : ''}`}>
+                    <input type="radio" name="printColor" checked={printColor === 'bw'} onChange={() => setPrintColor('bw')} style={{ display: 'none' }} />
+                    <span>Black & White</span>
+                    <span className="price-tag">₹2.00 / page</span>
+                  </label>
+                  <label className={`print-radio-card ${printColor === 'color' ? 'active' : ''}`}>
+                    <input type="radio" name="printColor" checked={printColor === 'color'} onChange={() => setPrintColor('color')} style={{ display: 'none' }} />
+                    <span>Colour Print</span>
+                    <span className="price-tag">₹10.00 / page</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="print-form-group">
+                <label>Binding Style</label>
+                <div className="print-radio-group">
+                  <label className={`print-radio-card ${printBinding === 'none' ? 'active' : ''}`}>
+                    <input type="radio" name="printBinding" checked={printBinding === 'none'} onChange={() => setPrintBinding('none')} style={{ display: 'none' }} />
+                    <span>No Binding</span>
+                    <span className="price-tag">₹0</span>
+                  </label>
+                  <label className={`print-radio-card ${printBinding === 'spiral' ? 'active' : ''}`}>
+                    <input type="radio" name="printBinding" checked={printBinding === 'spiral'} onChange={() => setPrintBinding('spiral')} style={{ display: 'none' }} />
+                    <span>Spiral Binding</span>
+                    <span className="price-tag">+₹49</span>
+                  </label>
+                  <label className={`print-radio-card ${printBinding === 'project' ? 'active' : ''}`}>
+                    <input type="radio" name="printBinding" checked={printBinding === 'project'} onChange={() => setPrintBinding('project')} style={{ display: 'none' }} />
+                    <span>Project Binding</span>
+                    <span className="price-tag">+₹199</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="print-form-group" style={{ flexDirection: 'row', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <input 
+                  type="checkbox" 
+                  id="lamination" 
+                  checked={printLamination} 
+                  onChange={(e) => setPrintLamination(e.target.checked)} 
+                  style={{ width: '18px', height: '18px', accentColor: 'var(--primary)' }}
+                />
+                <label htmlFor="lamination" style={{ margin: 0, fontSize: '0.88rem', fontWeight: 600, cursor: 'pointer' }}>
+                  Add Transparent Sheet Lamination (+₹30)
+                </label>
+              </div>
+            </div>
+
+            {/* Print Summary Invoice panel */}
+            <div className="printing-invoice-card">
+              <h3>Order Cost Summary</h3>
+              <div className="print-invoice-breakdown">
+                <div className="invoice-row">
+                  <span>{printPages} pages ({printColor === 'bw' ? 'B&W' : 'Color'})</span>
+                  <strong>₹{printPages * (printColor === 'bw' ? 2 : 10)}</strong>
+                </div>
+                <div className="invoice-row">
+                  <span>Binding Type ({printBinding})</span>
+                  <strong>₹{printBinding === 'spiral' ? 49 : printBinding === 'project' ? 199 : 0}</strong>
+                </div>
+                <div className="invoice-row">
+                  <span>Lamination sheet</span>
+                  <strong>₹{printLamination ? 30 : 0}</strong>
+                </div>
+                <div className="invoice-row">
+                  <span>Hyperlocal Student Runner fee</span>
+                  <strong>₹15</strong>
+                </div>
+                <div className="invoice-row total-row">
+                  <span>Grand Total</span>
+                  <strong>₹{(printPages * (printColor === 'bw' ? 2 : 10)) + (printBinding === 'spiral' ? 49 : printBinding === 'project' ? 199 : 0) + (printLamination ? 30 : 0) + 15}</strong>
+                </div>
+              </div>
+
+              <div className="print-delivery-block">
+                <h4>Select Pickup/Delivery Point</h4>
+                <div className="print-delivery-grid">
+                  <button className="del-btn-option active">📍 Hostel Room ({studentBlock}-{studentRoom})</button>
+                  <button className="del-btn-option" onClick={() => addToast('Selected Classroom Delivery option')}>🏫 Classroom Block</button>
+                  <button className="del-btn-option" onClick={() => addToast('Selected Library Desk pickup option')}>📚 Central Library Desk</button>
+                  <button className="del-btn-option" onClick={() => addToast('Selected Gate Pickup option')}>🚧 Campus Gate</button>
+                </div>
+              </div>
+
+              <button 
+                className="btn btn-primary print-submit-btn"
+                onClick={() => {
+                  if (!printFile) {
+                    addToast('Please upload a document PDF first', true);
+                    return;
+                  }
+                  addToast(`Order submitted! Your files will print and deliver to Block ${studentBlock} room ${studentRoom} in 25 mins.`);
+                  setPrintFile(null);
+                }}
+              >
+                Send Document to Print
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 4. CAMPUS MARKETPLACE */}
+      {currentTab === 'marketplace' && (
+        <div className="marketplace-container container">
+          <div className="marketplace-banner-split">
+            <div className="marketplace-hero">
+              <span className="badge badge-accent">🔄 Peer-to-Peer Second-Hand Market</span>
+              <h2>Second-Hand Peer Marketplace</h2>
+              <p>Buy reference tools, geometry sets, novels, cycles, or hostel furniture directly from graduating seniors.</p>
+              <button 
+                className="btn btn-primary" 
+                style={{ marginTop: '1rem' }} 
+                onClick={() => {
+                  setSellerItem('');
+                  setSellerPrice('');
+                  setSellerDesc('');
+                  setSellerOpen(true);
+                }}
+              >
+                + List Your Item For Sale
+              </button>
+            </div>
+            
+            {/* Quick Listing Stats */}
+            <div className="marketplace-stats-promo">
+              <div className="promo-stat-box">
+                <strong>45+</strong>
+                <span>Items Listed Today</span>
+              </div>
+              <div className="promo-stat-box">
+                <strong>98%</strong>
+                <span>Verified Peer Trust</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Active Listings Grid */}
+          <div className="marketplace-listings-section">
+            <h3>Active Campus Listings</h3>
+            
+            <div className="marketplace-listings-grid">
+              {marketplaceItems.map(item => (
+                <div key={item.id} className="market-item-card">
+                  <div className="market-item-img-container">
+                    <img src={item.image} alt={item.title} />
+                    <span className={`condition-tag ${item.condition?.toLowerCase() || 'good'}`}>{item.condition}</span>
+                  </div>
+                  <div className="market-item-body">
+                    <span className="market-item-seller">👤 Seller: {item.seller}</span>
+                    <h4 className="market-item-title">{item.title}</h4>
+                    <p className="market-item-desc">{item.desc}</p>
+                    <div className="market-item-footer">
+                      <div className="market-price">
+                        <strong>₹{item.price}</strong>
+                        {item.originalPrice && <span className="orig">₹{item.originalPrice}</span>}
+                      </div>
+                      <button 
+                        className="btn btn-secondary contact-seller-btn"
+                        onClick={() => addToast(`Contacting seller ${item.seller.split(' ')[0]} via UPI-chat. Check your notifications.`)}
+                      >
+                        Contact Seller
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. SERVICES HUB */}
+      {currentTab === 'services' && (
+        <div className="services-hub-container container">
+          <div className="services-header">
+            <span className="badge badge-primary">🛠 On-Campus Support</span>
+            <h2>Book Campus Dorm Services</h2>
+            <p>Schedule skilled campus technicians or helpers to fix, clean, or fetch items for your room.</p>
+          </div>
+
+          <div className="services-split-booking">
+            {/* Grid of bookable services */}
+            <div className="services-list-panel">
+              {[
+                { title: 'Laptop Cleaning & Fan Thermal Paste', price: 799, icon: '💻', desc: 'Internal dust cleaning, motherboard air blowout, and high-performance thermal paste application.' },
+                { title: 'Mechanical Keyboard Deep Clean', price: 199, icon: '⌨️', desc: 'Keycaps removal, ultrasonic cleaning, keyboard switch brush, and re-assembly.' },
+                { title: 'Dorm Device Setup & OS Install', price: 499, icon: '💿', desc: 'Operating system clean installation, campus Wi-Fi credentials integration, and software setup.' },
+                { title: 'Hostel Room Deep Cleaning', price: 299, icon: '🧹', desc: 'Floor vacuuming, table dust wipe down, fan blade cleaner, shelf organization.' },
+                { title: 'Water Can Delivery (20L)', price: 50, icon: '💧', desc: 'Refilled cold drinking mineral water can delivered directly inside your room.' },
+                { title: 'Outbound Courier Parcel Pickup', price: 99, icon: '📦', desc: 'Campus runner picks up your boxes and submits them to DTDC courier office for dispatch.' },
+                { title: 'Inbound Parcel Office Collection', price: 49, icon: '📯', desc: 'Runner collects post/parcel from college central gate office and delivers to your room.' },
+                { title: 'Document & Exam Sheet Room Delivery', price: 39, icon: '📄', desc: 'Inter-hostel delivery of exam notes, sheets, lab coats or calculators.' }
+              ].map((srv, idx) => (
+                <div 
+                  key={idx} 
+                  className={`service-selector-card ${bookingService === srv.title ? 'active' : ''}`}
+                  onClick={() => setBookingService(srv.title)}
+                >
+                  <span className="service-icon">{srv.icon}</span>
+                  <div className="service-details-text">
+                    <h4>{srv.title}</h4>
+                    <p>{srv.desc}</p>
+                    <strong>₹{srv.price}</strong>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Date Time slot scheduler */}
+            <div className="services-scheduler-card">
+              <h3>Confirm Scheduling</h3>
+              <div className="scheduler-box">
+                <div className="schedule-row">
+                  <span>Selected Service:</span>
+                  <strong>{bookingService}</strong>
+                </div>
+
+                <div className="schedule-input-group">
+                  <label>Select Date</label>
+                  <input 
+                    type="date" 
+                    value={bookingDate} 
+                    onChange={(e) => setBookingDate(e.target.value)} 
+                    className="schedule-date-picker"
+                  />
+                </div>
+
+                <div className="schedule-input-group">
+                  <label>Select Time Slot</label>
+                  <div className="time-slots-grid">
+                    {[
+                      '08:00 AM - 10:00 AM',
+                      '10:00 AM - 12:00 PM',
+                      '12:00 PM - 02:00 PM',
+                      '02:00 PM - 04:00 PM',
+                      '04:00 PM - 06:00 PM'
+                    ].map(slot => (
+                      <button 
+                        key={slot} 
+                        className={`slot-option-btn ${bookingTime === slot ? 'active' : ''}`}
+                        onClick={() => setBookingTime(slot)}
+                      >
+                        {slot}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="schedule-input-group">
+                  <label>Delivery Point / Dorm Floor</label>
+                  <input 
+                    type="text" 
+                    value={bookingLoc}
+                    onChange={(e) => setBookingLoc(e.target.value)}
+                    className="schedule-loc-input"
+                    placeholder="e.g. Hostel Block H-4 Room 302"
+                  />
+                </div>
+
+                <div className="scheduler-footer-total">
+                  <span>Estimated Total</span>
+                  <strong>₹{
+                    bookingService.includes('Laptop') ? 799 : 
+                    bookingService.includes('Keyboard') ? 199 : 
+                    bookingService.includes('OS') ? 499 : 
+                    bookingService.includes('Deep Cleaning') ? 299 :
+                    bookingService.includes('Water Can') ? 50 : 
+                    bookingService.includes('Courier') ? 99 : 
+                    bookingService.includes('Parcel') ? 49 : 39
+                  }</strong>
+                </div>
+
+                <button 
+                  className="btn btn-primary schedule-confirm-btn"
+                  onClick={() => {
+                    addToast(`Booking confirmed for ${bookingService} on ${bookingDate} (${bookingTime})! Check order details in your profile.`);
+                  }}
+                >
+                  Book Service Slot
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 6. COMBOS & OFFERS */}
+      {currentTab === 'combos' && (
+        <div className="combos-container container">
+          <div className="combos-header">
+            <span className="badge badge-accent">🎁 Student Packs & Offers</span>
+            <h2>Curated Semester Kits & Rewards</h2>
+            <p>Save up to 30% by buying pre-packaged bundles designed for freshers, exams, lab prep, and job placements.</p>
+          </div>
+
+          {/* Combos Grid */}
+          <div className="combos-grid-view">
+            {[
+              { title: 'Freshers Starter Kit', price: 999, original: 1499, img: 'https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?auto=format&fit=crop&q=80&w=400', items: ['Utility Plastic Bucket', 'Plastic Mug', 'Hostel Door Lock', 'Premium Clothes Hangers (5)', 'Cotton Single Bedsheet'] },
+              { title: 'Semester Exam Prep Kit', price: 1499, original: 1999, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400', items: ['Classmate Register', 'Trimax Gel Pens (Pack of 3)', 'Maped Geometry Box', 'Casio FX-991EX Calculator'] },
+              { title: 'Placement Interview Kit', price: 1799, original: 2499, img: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=400', items: ['Executive Leatherette Resume Folder', 'Notebook', 'Signature Ink Pen', 'Aluminum Laptop Stand', 'HD Webcam'] },
+              { title: 'Science Lab Gear Kit', price: 599, original: 899, img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400', items: ['Cotton Chemistry Lab Coat', 'Maped Ruler & Stationery Pack', 'Lab Record Book', 'Casio Standard Calculator'] }
+            ].map((combo, idx) => (
+              <div key={idx} className="combo-card-custom">
+                <img src={combo.img} alt={combo.title} className="combo-card-img" />
+                <div className="combo-card-body">
+                  <h4>{combo.title}</h4>
+                  <ul className="combo-items-list-custom">
+                    {combo.items.map((item, itemIdx) => (
+                      <li key={itemIdx}>✓ {item}</li>
+                    ))}
+                  </ul>
+                  <div className="combo-card-footer">
+                    <div className="combo-price-info">
+                      <span className="save-badge">Save {(((combo.original - combo.price)/combo.original)*100).toFixed(0)}%</span>
+                      <div className="price-block-c">
+                        <strong className="c-price">₹{combo.price}</strong>
+                        <span className="c-orig">₹{combo.original}</span>
+                      </div>
+                    </div>
+                    <button 
+                      className="btn btn-primary add-combo-btn"
+                      onClick={() => {
+                        const dummyProduct = {
+                          id: `combo-pack-${idx}`,
+                          title: combo.title,
+                          price: combo.price,
+                          image: combo.img
+                        };
+                        handleAddToCart(dummyProduct, 'combo');
+                      }}
+                    >
+                      Add Bundle
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Student Rewards Dashboard */}
+          <div className="rewards-dashboard-panel">
+            <h3>🎁 Referral & Student Rewards Program</h3>
+            <div className="rewards-dashboard-grid">
+              {/* Wallet stats */}
+              <div className="reward-card-stat">
+                <span>Your Wallet Balance</span>
+                <strong>₹{walletBalance}</strong>
+                <span className="reward-sub">Reward points: {walletBalance} pts</span>
+              </div>
+
+              {/* Referral details */}
+              <div className="reward-card-stat">
+                <span>Referral Balance Earned</span>
+                <strong>₹150</strong>
+                <span className="reward-sub">From 3 successful referrals</span>
+              </div>
+
+              {/* Refer links box */}
+              <div className="reward-card-link-box">
+                <h4>Share Your Invite Link</h4>
+                <p>Get ₹50 in reward points for every freshman who registers and places their first order.</p>
+                <div className="referral-link-row">
+                  <input type="text" readOnly value="https://campushub.in/invite/RAJESH8390" className="invite-link-input" />
+                  <button className="btn btn-primary invite-copy-btn" onClick={() => addToast('Referral link copied to clipboard!')}>Copy Link</button>
+                </div>
+              </div>
+            </div>
+
+            {/* Coupons list */}
+            <div className="coupons-section-dashboard">
+              <h4>Available Coupons</h4>
+              <div className="coupons-deck">
+                <div className="coupon-coupon-card">
+                  <strong className="coupon-code">FRESHER10</strong>
+                  <span>Flat 10% off for freshmen on hostel setup items</span>
+                </div>
+                <div className="coupon-coupon-card">
+                  <strong className="coupon-code">EXAMPREP</strong>
+                  <span>Save ₹100 on Exam Preparation Kits</span>
+                </div>
+                <div className="coupon-coupon-card">
+                  <strong className="coupon-code">FREEGOURMET</strong>
+                  <span>Free campus runner delivery on orders above ₹600</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 7. STUDENT PROFILE & SETTINGS */}
+      {currentTab === 'profile' && (
+        <div className="student-profile-container container">
+          <div className="profile-wrapper-split">
+            {/* Left sidebar card */}
+            <div className="profile-details-card">
+              <div className="profile-avatar-block">
+                <img src={currentUser?.avatar || "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150"} alt="User avatar" />
+                <span className="verified-student-badge">✓ Verified Student ID</span>
+                <h3>{currentUser?.name || "Rajesh Kumar"}</h3>
+                <p>Department: {studentDept} • {studentSem}</p>
+                {currentUser && (
+                  <button className="btn btn-secondary" onClick={() => {
+                    setCurrentUser(null);
+                    addToast('Logged out successfully');
+                  }} style={{marginTop: '0.5rem'}}>
+                    Logout
+                  </button>
+                )}
+              </div>
+
+              {/* Info Preferences forms */}
+              <div className="profile-pref-form">
+                <h4>Preference Setup</h4>
+                
+                <div className="pref-row">
+                  <div className="pref-group">
+                    <label>Hostel Block</label>
+                    <select value={studentBlock} onChange={(e) => setStudentBlock(e.target.value)}>
+                      <option value="H-1">H-1 Block</option>
+                      <option value="H-2">H-2 Block</option>
+                      <option value="H-3">H-3 Block</option>
+                      <option value="H-4">H-4 Block</option>
+                      <option value="PG-1">PG-1 Block</option>
+                    </select>
+                  </div>
+                  <div className="pref-group">
+                    <label>Room Number</label>
+                    <input type="text" value={studentRoom} onChange={(e) => setStudentRoom(e.target.value)} placeholder="302" />
+                  </div>
+                </div>
+
+                <div className="pref-group">
+                  <label>Department Selection</label>
+                  <select value={studentDept} onChange={(e) => setStudentDept(e.target.value)}>
+                    <option value="Computer Science">Computer Science & Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Bio-Technology">Bio-Technology</option>
+                    <option value="Business Administration">Business Administration</option>
+                  </select>
+                </div>
+
+                <div className="pref-group">
+                  <label>Semester Selection</label>
+                  <select value={studentSem} onChange={(e) => setStudentSem(e.target.value)}>
+                    <option value="Semester 1">Semester 1 (Freshman)</option>
+                    <option value="Semester 3">Semester 3 (Sophomore)</option>
+                    <option value="Semester 5">Semester 5 (Junior)</option>
+                    <option value="Semester 7">Semester 7 (Senior)</option>
+                  </select>
+                </div>
+
+                <button className="btn btn-primary save-pref-btn" onClick={() => addToast('Profile settings saved successfully!')}>
+                  Save Preferences
+                </button>
+              </div>
+            </div>
+
+            {/* Right sidebar profile content */}
+            <div className="profile-content-panel">
+              {/* Wallet and balances */}
+              <div className="profile-points-box">
+                <div className="points-info-text">
+                  <h3>CampusHub Student Wallet Balance</h3>
+                  <p>Use student wallet points for one-tap payments on services & prints.</p>
+                </div>
+                <div className="points-display">
+                  <strong>₹{walletBalance}</strong>
+                  <span>Campus Wallet</span>
+                </div>
+              </div>
+
+              {/* Saved Dorm Addresses */}
+              <div className="profile-saved-addresses">
+                <h4>Saved Delivery Locations</h4>
+                <div className="addresses-list-deck">
+                  {profileAddresses.map((addr, idx) => (
+                    <div key={idx} className="address-card-row">
+                      <span>📍 {addr}</span>
+                      <button 
+                        className="remove-address-btn"
+                        onClick={() => {
+                          setProfileAddresses(profileAddresses.filter((_, i) => i !== idx));
+                          addToast('Address deleted');
+                        }}
+                      >
+                        Delete
+                      </button>
                     </div>
                   ))}
                 </div>
-                <form className="ai-chat-footer" onSubmit={(e) => {
-                  e.preventDefault();
-                  if (!aiInput.trim()) return;
-                  const userMsg = aiInput;
-                  setAiMessages(prev => [...prev, { sender: 'user', text: userMsg }]);
-                  setAiInput('');
-                  
-                  // Simple mock AI response logic based on query
-                  setTimeout(() => {
-                    const query = userMsg.toLowerCase();
-                    let reply = '';
-                    if (query.includes('exam kit')) {
-                      reply = 'I found the "Semester Exam Prep Kit" for ₹1499 containing a scientific calculator, registers, pens, and sticky notes. I can filter products for you or you can click "Add Bundle" in the Student Combo Packs category.';
-                    } else if (query.includes('hostel')) {
-                      reply = 'I recommend checking out the Hostel Room Essentials! We have Bed Sheets (₹399), Table Lamps (₹450), and Plastic Bucket & Mug Sets (₹249). Tell me if you are looking for a specific budget!';
-                    } else if (query.includes('500') || query.includes('cheap')) {
-                      reply = 'Here are items under ₹500: Trimax Pens (₹250), LED Study Lamps (₹399), Plastic Buckets (₹249), Coffee Mugs (₹150), and Geometry Boxes (₹150). You can type "under 500" in the search bar to filter them instantly!';
-                    } else if (query.includes('laptop') || query.includes('accessories')) {
-                      reply = 'For laptop accessories, we have Chargers (₹1200), Keyboard and Mouse setups, USB Hubs (₹599), and Aluminum Laptop Stands (₹799). You can click on the Electronics category in the store sidebar to browse them.';
-                    } else {
-                      reply = 'I can help you browse study notebooks, calculators, hostel locks, chargers, hoodies, and packages. Try asking for "under ₹500" or "Exam Kit"!';
-                    }
-                    setAiMessages(prev => [...prev, { sender: 'ai', text: reply }]);
-                  }, 800);
-                }}>
+                <div className="add-address-row">
                   <input 
                     type="text" 
-                    value={aiInput}
-                    onChange={(e) => setAiInput(e.target.value)}
-                    placeholder="Ask AI (e.g. Exam Kit...)" 
+                    placeholder="Add custom dorm delivery spot..." 
+                    value={newProfileAddress}
+                    onChange={(e) => setNewProfileAddress(e.target.value)}
                   />
-                  <button type="submit">Send</button>
-                </form>
+                  <button 
+                    className="btn btn-secondary" 
+                    onClick={() => {
+                      if (!newProfileAddress.trim()) return;
+                      setProfileAddresses([...profileAddresses, newProfileAddress.trim()]);
+                      setNewProfileAddress('');
+                      addToast('New delivery point saved!');
+                    }}
+                  >
+                    + Add
+                  </button>
+                </div>
               </div>
-            ) : (
-              <button className="ai-assistant-badge-btn" onClick={() => setAiChatOpen(true)}>
-                🧠 Ask AI Assistant
-              </button>
+
+              {/* Order History */}
+              <div className="profile-order-history">
+                <h4>Your Campus Orders</h4>
+                <table className="profile-orders-table-custom">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Date</th>
+                      <th>Total Cost</th>
+                      <th>Delivery Location</th>
+                      <th>Delivery Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#CH-83920</td>
+                      <td>2026-07-29</td>
+                      <td>₹430</td>
+                      <td>Hostel H-4, Room 302</td>
+                      <td><span className="status-pill shipping">Out for Delivery</span></td>
+                    </tr>
+                    <tr>
+                      <td>#CH-83815</td>
+                      <td>2026-07-15</td>
+                      <td>₹1299</td>
+                      <td>Hostel H-4, Room 302</td>
+                      <td><span className="status-pill completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <td>#CH-83601</td>
+                      <td>2026-06-12</td>
+                      <td>₹180</td>
+                      <td>Central Library Desk 12</td>
+                      <td><span className="status-pill completed">Completed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 8. ADMIN CONTROL */}
+      {currentTab === 'admin' && (
+        <div className="admin-dashboard-container container">
+          <div className="admin-dashboard-sidebar">
+            <button className={`admin-tab-btn ${adminActiveTab === 'revenue' ? 'active' : ''}`} onClick={() => setAdminActiveTab('revenue')}>📈 Revenue & Analytics</button>
+            <button className={`admin-tab-btn ${adminActiveTab === 'orders' ? 'active' : ''}`} onClick={() => setAdminActiveTab('orders')}>📦 Active Orders</button>
+            <button className={`admin-tab-btn ${adminActiveTab === 'delivery' ? 'active' : ''}`} onClick={() => setAdminActiveTab('delivery')}>🏃 Delivery Partners</button>
+            <button className={`admin-tab-btn ${adminActiveTab === 'inventory' ? 'active' : ''}`} onClick={() => setAdminActiveTab('inventory')}>📋 Inventory Stock</button>
+            <button className={`admin-tab-btn ${adminActiveTab === 'users' ? 'active' : ''}`} onClick={() => setAdminActiveTab('users')}>👥 Users Status</button>
+          </div>
+          
+          <div className="admin-dashboard-content">
+            {adminActiveTab === 'revenue' && (
+              <div className="admin-panel-fade">
+                <h3 className="admin-section-title">Revenue & Analytics Dashboard</h3>
+                <div className="admin-stats-grid">
+                  <div className="stat-card">
+                    <span>Daily Revenue</span>
+                    <strong>₹42,850</strong>
+                    <span className="trend positive">↑ 18% from yesterday</span>
+                  </div>
+                  <div className="stat-card">
+                    <span>Active Customers Today</span>
+                    <strong>312</strong>
+                    <span className="trend positive">↑ 8% from yesterday</span>
+                  </div>
+                  <div className="stat-card">
+                    <span>Average Basket Value</span>
+                    <strong>₹480</strong>
+                    <span className="trend negative">↓ 2% from last week</span>
+                  </div>
+                  <div className="stat-card">
+                    <span>Total Items In Stock</span>
+                    <strong>1,420</strong>
+                    <span className="trend normal">Steady</span>
+                  </div>
+                </div>
+                
+                <div className="dashboard-chart-mock">
+                  <h4>Order Volume (Last 24 Hours)</h4>
+                  <div className="bar-chart-mock">
+                    <div className="chart-bar" style={{ height: '40%' }}><span>8 AM</span></div>
+                    <div className="chart-bar" style={{ height: '55%' }}><span>12 PM</span></div>
+                    <div className="chart-bar" style={{ height: '85%' }}><span>4 PM</span></div>
+                    <div className="chart-bar" style={{ height: '95%' }}><span>8 PM</span></div>
+                    <div className="chart-bar" style={{ height: '70%' }}><span>12 AM</span></div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {adminActiveTab === 'orders' && (
+              <div className="admin-panel-fade">
+                <h3 className="admin-section-title">Active Orders Status</h3>
+                <table className="admin-orders-table">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Items</th>
+                      <th>Total Price</th>
+                      <th>Hostel / Block</th>
+                      <th>Runner</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#CH-83920</td>
+                      <td>Trimax Pens, Classmate Notebooks</td>
+                      <td>₹430</td>
+                      <td>Hostel H-4, Room 302</td>
+                      <td>Sarah M. (Junior)</td>
+                      <td><span className="status-pill shipping">Out for Delivery</span></td>
+                    </tr>
+                    <tr>
+                      <td>#CH-83921</td>
+                      <td>Scientific Calculator, Files</td>
+                      <td>₹1374</td>
+                      <td>Hostel H-1, Room 104</td>
+                      <td>Daniel T. (Sophomore)</td>
+                      <td><span className="status-pill pending">Packing</span></td>
+                    </tr>
+                    <tr>
+                      <td>#CH-83922</td>
+                      <td>Laundry Basket, Bed Sheet</td>
+                      <td>₹698</td>
+                      <td>Hostel H-2, Room 410</td>
+                      <td>Pooja V. (Senior)</td>
+                      <td><span className="status-pill completed">Completed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {adminActiveTab === 'delivery' && (
+              <div className="admin-panel-fade">
+                <h3 className="admin-section-title">Delivery Partner Runners</h3>
+                <div className="runner-profiles-grid">
+                  <div className="runner-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" alt="Daniel" />
+                    <div className="runner-info">
+                      <strong>Daniel T. (Sophomore)</strong>
+                      <span>Active Orders: 1</span>
+                      <span>Rating: 4.8★</span>
+                      <span className="status active">Active on Shift</span>
+                    </div>
+                  </div>
+                  <div className="runner-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" alt="Sarah" />
+                    <div className="runner-info">
+                      <strong>Sarah M. (Junior)</strong>
+                      <span>Active Orders: 1</span>
+                      <span>Rating: 4.9★</span>
+                      <span className="status active">On Delivery</span>
+                    </div>
+                  </div>
+                  <div className="runner-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100" alt="Rajesh" />
+                    <div className="runner-info">
+                      <strong>Rajesh K. (Senior)</strong>
+                      <span>Active Orders: 0</span>
+                      <span>Rating: 4.7★</span>
+                      <span className="status inactive">Offline</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {adminActiveTab === 'inventory' && (
+              <div className="admin-panel-fade">
+                <h3 className="admin-section-title">Inventory Stock Logs</h3>
+                <table className="admin-orders-table">
+                  <thead>
+                    <tr>
+                      <th>Product Name</th>
+                      <th>Category</th>
+                      <th>Stock Count</th>
+                      <th>Alert Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Classmate Pulse Registers</td>
+                      <td>Study Essentials</td>
+                      <td>85 units</td>
+                      <td><span className="status-pill completed">In Stock</span></td>
+                    </tr>
+                    <tr>
+                      <td>Casio Scientific Calculator FX-991EX</td>
+                      <td>Study Essentials</td>
+                      <td>12 units</td>
+                      <td><span className="status-pill pending">Low Stock</span></td>
+                    </tr>
+                    <tr>
+                      <td>Trimax Gel Pens (Blue)</td>
+                      <td>Study Essentials</td>
+                      <td>150 units</td>
+                      <td><span className="status-pill completed">In Stock</span></td>
+                    </tr>
+                    <tr>
+                      <td>Plastic Wash Bucket (18L)</td>
+                      <td>Hostel Essentials</td>
+                      <td>4 units</td>
+                      <td><span className="status-pill shipping">Reorder Alert</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {adminActiveTab === 'users' && (
+              <div className="admin-panel-fade">
+                <h3 className="admin-section-title">Verified Student Users</h3>
+                <table className="admin-orders-table">
+                  <thead>
+                    <tr>
+                      <th>Student Name</th>
+                      <th>Department & Year</th>
+                      <th>Active Address</th>
+                      <th>Verification Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rajesh Kumar</td>
+                      <td>Computer Science, Junior</td>
+                      <td>Hostel Block H-4 Room 302</td>
+                      <td><span className="status-pill completed">Verified ID</span></td>
+                    </tr>
+                    <tr>
+                      <td>Sarah Morris</td>
+                      <td>Computer Science, Junior</td>
+                      <td>Hostel Block H-1 Room 204</td>
+                      <td><span className="status-pill completed">Verified ID</span></td>
+                    </tr>
+                    <tr>
+                      <td>Daniel Taneja</td>
+                      <td>Bio-Technology, Sophomore</td>
+                      <td>Hostel Block H-3 Room 102</td>
+                      <td><span className="status-pill completed">Verified ID</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             )}
           </div>
         </div>
       )}
+
+      {/* AI Shopping Assistant Widget (Always accessible) */}
+      <div className={`ai-assistant-widget ${aiChatOpen ? 'expanded' : ''}`}>
+        {aiChatOpen ? (
+          <div className="ai-chat-window">
+            <div className="ai-chat-header">
+              <h4>🧠 CampusHub AI Assistant</h4>
+              <button className="ai-chat-close-btn" onClick={() => setAiChatOpen(false)}>×</button>
+            </div>
+            <div className="ai-chat-body">
+              {aiMessages.map((msg, idx) => (
+                <div key={idx} className={`chat-message ${msg.sender}`}>
+                  <div className="chat-bubble">{msg.text}</div>
+                </div>
+              ))}
+            </div>
+            <form className="ai-chat-footer" onSubmit={(e) => {
+              e.preventDefault();
+              if (!aiInput.trim()) return;
+              const userMsg = aiInput;
+              setAiMessages(prev => [...prev, { sender: 'user', text: userMsg }]);
+              setAiInput('');
+              
+              setTimeout(() => {
+                const query = userMsg.toLowerCase();
+                let reply = '';
+                if (query.includes('exam kit') || query.includes('exam')) {
+                  reply = 'I recommend the "Semester Exam Prep Kit" (₹1499) which contains registers, pens, and a calculator. It is located in the Combos & Offers tab.';
+                } else if (query.includes('hostel') || query.includes('room')) {
+                  reply = 'For hostel setups, check the Dorm Store / Hostel category or our Freshers Starter Kit in the Combos page which includes a bucket, mug, hangers, sheet and lock for ₹999.';
+                } else if (query.includes('500') || query.includes('cheap')) {
+                  reply = 'Items under ₹500: Trimax Pens (₹250), LED Study Lamps (₹399), Plastic Buckets (₹249), Coffee Mugs (₹150), and Chemistry Lab Coats (₹150 on second-hand marketplace).';
+                } else if (query.includes('laptop') || query.includes('accessories')) {
+                  reply = 'We have Laptop stands (₹799), Wireless Mouse (₹299), mechanical keyboards (₹599) in the Dorm Store, or laptop cleaning service (₹799) in the Services booking page.';
+                } else {
+                  reply = 'I can guide you to printing PDF files, buying second-hand textbooks, scheduling room cleans, or ordering exam kits. Tell me what you need!';
+                }
+                setAiMessages(prev => [...prev, { sender: 'ai', text: reply }]);
+              }, 800);
+            }}>
+              <input 
+                type="text" 
+                value={aiInput}
+                onChange={(e) => setAiInput(e.target.value)}
+                placeholder="Ask AI (e.g. Exam Kit...)" 
+              />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        ) : (
+          <button className="ai-assistant-badge-btn" onClick={() => setAiChatOpen(true)}>
+            🧠 Ask AI Assistant
+          </button>
+        )}
+      </div>
       </main>
 
       {/* ==========================================
