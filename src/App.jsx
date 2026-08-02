@@ -1112,7 +1112,7 @@ export default function App() {
           <div className="container hero-grid">
             <div className="hero-content">
               <div className="hero-tagline">
-                <span className="badge badge-primary">Hyperlocal Campus Delivery</span>
+                
               </div>
               <h1 className="hero-title">Everything You Need On Campus. <span>Delivered Fast.</span></h1>
               <p className="hero-desc">
