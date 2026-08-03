@@ -8,6 +8,7 @@ export default function CartDrawer({
   handleRemoveFromCart,
   subtotal,
   deliveryCharge,
+  onProceedToPay,
   addToast
 }) {
   return (
@@ -67,7 +68,14 @@ export default function CartDrawer({
           </div>
           <button 
             className="btn btn-accent btn-checkout" 
-            onClick={() => { addToast('Checkout simulated! Payment screen loaded.'); setCartOpen(false); }}
+            onClick={() => {
+              if (onProceedToPay) {
+                onProceedToPay();
+              } else {
+                addToast('Checkout payment screen loading...');
+                setCartOpen(false);
+              }
+            }}
             disabled={cart.length === 0}
           >
             Proceed to Pay

@@ -33,6 +33,7 @@ import SellerModal from './components/modals/SellerModal';
 import TrackOrderModal from './components/modals/TrackOrderModal';
 import ProductDetailModal from './components/modals/ProductDetailModal';
 import AIChatDrawer from './components/modals/AIChatDrawer';
+import CheckoutModal from './components/modals/CheckoutModal';
 
 export default function App() {
   // --- STATE MANAGEMENT ---
@@ -55,11 +56,12 @@ export default function App() {
   const [sellerOpen, setSellerOpen] = useState(false);
   const [trackOpen, setTrackOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [wishlistOpen, setWishlistOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   // Dynamic Orders history
-  const [orders] = useState([
+  const [orders, setOrders] = useState([
     { id: 'CH-83920', date: '2026-07-29', total: 430, location: 'Hostel Block H-4, Room 302', status: 'shipping', items: 'Trimax Pens, Classmate Notebooks', runner: 'Sarah M. (Junior)' },
     { id: 'CH-83815', date: '2026-07-15', total: 1299, location: 'Hostel Block H-4, Room 302', status: 'completed', items: 'Official Varsity Hoodie', runner: 'Sarah M. (Junior)' },
     { id: 'CH-83601', date: '2026-06-12', total: 180, location: 'Central Library Desk 12', status: 'completed', items: 'Notebooks (Pack of 6)', runner: 'Daniel T. (Sophomore)' }
@@ -200,6 +202,12 @@ export default function App() {
     setTimeout(() => {
       setToasts(prev => prev.filter(t => t.id !== id));
     }, 3000);
+  };
+
+  const handlePlaceOrder = (newOrder) => {
+    setOrders(prev => [newOrder, ...prev]);
+    setCart([]);
+    addToast(`🎉 Order #${newOrder.id} placed successfully!`);
   };
 
   const handleAddToCart = (item) => {
@@ -769,6 +777,22 @@ export default function App() {
         handleRemoveFromCart={handleRemoveFromCart}
         subtotal={subtotal}
         deliveryCharge={deliveryCharge}
+        onProceedToPay={() => { setCartOpen(false); setCheckoutOpen(true); }}
+        addToast={addToast}
+      />
+
+      <CheckoutModal
+        checkoutOpen={checkoutOpen}
+        setCheckoutOpen={setCheckoutOpen}
+        cart={cart}
+        subtotal={subtotal}
+        deliveryCharge={deliveryCharge}
+        profileAddresses={profileAddresses}
+        setProfileAddresses={setProfileAddresses}
+        walletBalance={walletBalance}
+        onPlaceOrder={handlePlaceOrder}
+        setTrackOpen={setTrackOpen}
+        setTrackInput={setTrackInput}
         addToast={addToast}
       />
 
