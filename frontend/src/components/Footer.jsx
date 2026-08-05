@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer({
   setSellerOpen,
@@ -7,12 +8,14 @@ export default function Footer({
   setNewsletterEmail,
   handleNewsletterSubmit
 }) {
+  const navigate = useNavigate();
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <a href="#" className="footer-logo" onClick={(e) => { e.preventDefault(); window.scrollTo(0,0); }}>
+            <a href="/" className="footer-logo" onClick={(e) => { e.preventDefault(); navigate('/'); window.scrollTo(0,0); }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
                 <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
               </svg>
@@ -47,9 +50,9 @@ export default function Footer({
           <div className="footer-column">
             <h4>Platform</h4>
             <ul className="footer-links">
-              <li><a href="#featured-products">Shop Products</a></li>
-              <li><a href="#services">Campus Services</a></li>
-              <li><a href="#marketplace">Marketplace</a></li>
+              <li><a href="/store" onClick={(e) => { e.preventDefault(); navigate('/store'); }}>Shop Products</a></li>
+              <li><a href="/services" onClick={(e) => { e.preventDefault(); navigate('/services'); }}>Campus Services</a></li>
+              <li><a href="/marketplace" onClick={(e) => { e.preventDefault(); navigate('/marketplace'); }}>Marketplace</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); setSellerOpen(true); }}>Become a Seller</a></li>
             </ul>
           </div>

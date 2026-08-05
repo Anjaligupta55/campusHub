@@ -1,22 +1,45 @@
 import React from 'react';
+import { useCartStore } from '../../store/useCartStore';
+import { useUIStore } from '../../store/useUIStore';
 
-export default function CartDrawer({
-  cartOpen,
-  setCartOpen,
-  cart,
-  handleUpdateQty,
-  handleRemoveFromCart,
-  subtotal,
-  deliveryCharge,
-  onProceedToPay,
-  addToast
-}) {
+export default function CartDrawer(props) {
+  // Store selectors with fallbacks
+  const storeCart = useCartStore((state) => state.cart);
+  const updateQty = useCartStore((state) => state.updateQty);
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
+  const subtotal = useCartStore((state) => state.getSubtotal());
+  const deliveryCharge = useCartStore((state) => state.getDeliveryCharge());
+
+  const cartOpen = useUIStore((state) => state.cartOpen);
+  const setCartOpen = useUIStore((state) => state.setCartOpen);
+  const setCheckoutOpen = useUIStore((state) => state.setCheckoutOpen);
+
+  const cart = props.cart || storeCart;
+  const isCartOpen = props.cartOpen !== undefined ? props.cartOpen : cartOpen;
+
+  const handleClose = () => {
+    if (props.setCartOpen) props.setCartOpen(false);
+    else setCartOpen(false);
+  };
+
+  const handleProceed = () => {
+    handleClose();
+    if (props.onProceedToPay) {
+      props.onProceedToPay();
+    } else {
+      setCheckoutOpen(true);
+    }
+  };
+
   return (
-    <div className={`cart-drawer-backdrop ${cartOpen ? 'open' : ''}`} onClick={(e) => { if (e.target.classList.contains('cart-drawer-backdrop')) setCartOpen(false); }}>
+    <div 
+      className={`cart-drawer-backdrop ${isCartOpen ? 'open' : ''}`} 
+      onClick={(e) => { if (e.target.classList.contains('cart-drawer-backdrop')) handleClose(); }}
+    >
       <div className="cart-drawer" role="dialog" aria-modal="true">
         <div className="cart-drawer-header">
           <h3>Your Cart Bag</h3>
-          <button className="cart-drawer-close" onClick={() => setCartOpen(false)}>×</button>
+          <button className="cart-drawer-close" onClick={handleClose}>×</button>
         </div>
         
         <div className="cart-items-container">
@@ -40,11 +63,11 @@ export default function CartDrawer({
                     <span className="cart-item-price">₹{(item.price * item.quantity).toFixed(0)}</span>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                       <div className="cart-item-quantity">
-                        <button className="qty-btn" onClick={() => handleUpdateQty(item.id, -1)}>-</button>
+                        <button className="qty-btn" onClick={() => props.handleUpdateQty ? props.handleUpdateQty(item.id, -1) : updateQty(item.id, -1)}>-</button>
                         <div className="qty-val">{item.quantity}</div>
-                        <button className="qty-btn" onClick={() => handleUpdateQty(item.id, 1)}>+</button>
+                        <button className="qty-btn" onClick={() => props.handleUpdateQty ? props.handleUpdateQty(item.id, 1) : updateQty(item.id, 1)}>+</button>
                       </div>
-                      <button className="cart-item-remove" onClick={() => handleRemoveFromCart(item.id)}>Remove</button>
+                      <button className="cart-item-remove" onClick={() => props.handleRemoveFromCart ? props.handleRemoveFromCart(item.id) : removeFromCart(item.id)}>Remove</button>
                     </div>
                   </div>
                 </div>
@@ -68,14 +91,7 @@ export default function CartDrawer({
           </div>
           <button 
             className="btn btn-accent btn-checkout" 
-            onClick={() => {
-              if (onProceedToPay) {
-                onProceedToPay();
-              } else {
-                addToast('Checkout payment screen loading...');
-                setCartOpen(false);
-              }
-            }}
+            onClick={handleProceed}
             disabled={cart.length === 0}
           >
             Proceed to Pay

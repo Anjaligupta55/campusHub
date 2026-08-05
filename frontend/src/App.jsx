@@ -34,6 +34,15 @@ import TrackOrderModal from './components/modals/TrackOrderModal';
 import ProductDetailModal from './components/modals/ProductDetailModal';
 import AIChatDrawer from './components/modals/AIChatDrawer';
 import CheckoutModal from './components/modals/CheckoutModal';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
   // --- STATE MANAGEMENT ---
@@ -521,19 +530,104 @@ export default function App() {
       />
 
       {/* Main Views */}
+      <ScrollToTop />
       <main>
-        {currentTab === 'home' && (
-          <>
-            <HeroBanner
-              HERO_SLIDES={HERO_SLIDES}
-              currentSlide={currentSlide}
-              isTransitioning={isTransitioning}
-              handleTransitionEnd={handleTransitionEnd}
-              setCategoryFilter={setCategoryFilter}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <HeroBanner
+                HERO_SLIDES={HERO_SLIDES}
+                currentSlide={currentSlide}
+                isTransitioning={isTransitioning}
+                handleTransitionEnd={handleTransitionEnd}
+                setCategoryFilter={setCategoryFilter}
+              />
+
+              <CategoryFilter setCategoryFilter={setCategoryFilter} />
+
+              <ServicesSection
+                bookingService={bookingService}
+                setBookingService={setBookingService}
+                bookingDate={bookingDate}
+                setBookingDate={setBookingDate}
+                bookingTime={bookingTime}
+                setBookingTime={setBookingTime}
+                bookingLoc={bookingLoc}
+                setBookingLoc={setBookingLoc}
+                addToast={addToast}
+              />
+
+              <FeaturedProducts
+                categoryFilter={categoryFilter}
+                setCategoryFilter={setCategoryFilter}
+                PRODUCTS={PRODUCTS}
+                wishlist={wishlist}
+                handleToggleWishlist={handleToggleWishlist}
+                setSelectedProduct={setSelectedProduct}
+                handleAddToCart={handleAddToCart}
+              />
+
+              <CombosSection
+                COMBOS={COMBOS}
+                setSelectedProduct={setSelectedProduct}
+                handleAddToCart={handleAddToCart}
+              />
+
+              <MarketplaceSection
+                MARKETPLACE={MARKETPLACE}
+                setSellerOpen={setSellerOpen}
+                setSelectedProduct={setSelectedProduct}
+                handleContactSeller={handleContactSeller}
+              />
+            </>
+          } />
+
+          <Route path="/store" element={
+            <BlinkitStoreView
+              RAW_CATALOG={RAW_CATALOG}
+              CATALOG_PRODUCTS={CATALOG_PRODUCTS}
+              activeCategory={activeCategory}
+              setActiveCategory={setActiveCategory}
+              blinkitSearchQuery={blinkitSearchQuery}
+              setBlinkitSearchQuery={setBlinkitSearchQuery}
+              studentBlock={studentBlock}
+              studentRoom={studentRoom}
+              cart={cart}
+              setSelectedProduct={setSelectedProduct}
+              handleAddToCart={handleAddToCart}
+              handleUpdateQty={handleUpdateQty}
             />
+          } />
 
-            <CategoryFilter setCategoryFilter={setCategoryFilter} />
+          <Route path="/printing" element={
+            <PrintHubSection
+              handlePrintFileChange={handlePrintFileChange}
+              printFile={printFile}
+              setPrintFile={setPrintFile}
+              printPages={printPages}
+              setPrintPages={setPrintPages}
+              printColor={printColor}
+              setPrintColor={setPrintColor}
+              printBinding={printBinding}
+              setPrintBinding={setPrintBinding}
+              printLamination={printLamination}
+              setPrintLamination={setPrintLamination}
+              studentBlock={studentBlock}
+              studentRoom={studentRoom}
+              addToast={addToast}
+            />
+          } />
 
+          <Route path="/marketplace" element={
+            <MarketplaceSection
+              MARKETPLACE={MARKETPLACE}
+              setSellerOpen={setSellerOpen}
+              setSelectedProduct={setSelectedProduct}
+              handleContactSeller={handleContactSeller}
+            />
+          } />
+
+          <Route path="/services" element={
             <ServicesSection
               bookingService={bookingService}
               setBookingService={setBookingService}
@@ -545,128 +639,48 @@ export default function App() {
               setBookingLoc={setBookingLoc}
               addToast={addToast}
             />
+          } />
 
-            <FeaturedProducts
-              categoryFilter={categoryFilter}
-              setCategoryFilter={setCategoryFilter}
-              PRODUCTS={PRODUCTS}
-              wishlist={wishlist}
-              handleToggleWishlist={handleToggleWishlist}
-              setSelectedProduct={setSelectedProduct}
-              handleAddToCart={handleAddToCart}
-            />
-
+          <Route path="/combos" element={
             <CombosSection
               COMBOS={COMBOS}
               setSelectedProduct={setSelectedProduct}
               handleAddToCart={handleAddToCart}
             />
+          } />
 
-            <MarketplaceSection
-              MARKETPLACE={MARKETPLACE}
-              setSellerOpen={setSellerOpen}
-              setSelectedProduct={setSelectedProduct}
-              handleContactSeller={handleContactSeller}
+          <Route path="/profile" element={
+            <StudentProfileSection
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
+              studentDept={studentDept}
+              setStudentDept={setStudentDept}
+              studentSem={studentSem}
+              setStudentSem={setStudentSem}
+              studentBlock={studentBlock}
+              setStudentBlock={setStudentBlock}
+              studentRoom={studentRoom}
+              setStudentRoom={setStudentRoom}
+              walletBalance={walletBalance}
+              profileAddresses={profileAddresses}
+              setProfileAddresses={setProfileAddresses}
+              newProfileAddress={newProfileAddress}
+              setNewProfileAddress={setNewProfileAddress}
+              orders={orders}
+              addToast={addToast}
+              setLoginOpen={setLoginOpen}
             />
-          </>
-        )}
+          } />
 
-        {currentTab === 'dorm_store' && (
-          <BlinkitStoreView
-            RAW_CATALOG={RAW_CATALOG}
-            CATALOG_PRODUCTS={CATALOG_PRODUCTS}
-            activeCategory={activeCategory}
-            setActiveCategory={setActiveCategory}
-            blinkitSearchQuery={blinkitSearchQuery}
-            setBlinkitSearchQuery={setBlinkitSearchQuery}
-            studentBlock={studentBlock}
-            studentRoom={studentRoom}
-            cart={cart}
-            setSelectedProduct={setSelectedProduct}
-            handleAddToCart={handleAddToCart}
-            handleUpdateQty={handleUpdateQty}
-          />
-        )}
+          <Route path="/admin" element={
+            <AdminDashboard
+              adminActiveTab={adminActiveTab}
+              setAdminActiveTab={setAdminActiveTab}
+            />
+          } />
 
-        {currentTab === 'printing' && (
-          <PrintHubSection
-            handlePrintFileChange={handlePrintFileChange}
-            printFile={printFile}
-            setPrintFile={setPrintFile}
-            printPages={printPages}
-            setPrintPages={setPrintPages}
-            printColor={printColor}
-            setPrintColor={setPrintColor}
-            printBinding={printBinding}
-            setPrintBinding={setPrintBinding}
-            printLamination={printLamination}
-            setPrintLamination={setPrintLamination}
-            studentBlock={studentBlock}
-            studentRoom={studentRoom}
-            addToast={addToast}
-          />
-        )}
-
-        {currentTab === 'marketplace' && (
-          <MarketplaceSection
-            MARKETPLACE={MARKETPLACE}
-            setSellerOpen={setSellerOpen}
-            setSelectedProduct={setSelectedProduct}
-            handleContactSeller={handleContactSeller}
-          />
-        )}
-
-        {currentTab === 'services' && (
-          <ServicesSection
-            bookingService={bookingService}
-            setBookingService={setBookingService}
-            bookingDate={bookingDate}
-            setBookingDate={setBookingDate}
-            bookingTime={bookingTime}
-            setBookingTime={setBookingTime}
-            bookingLoc={bookingLoc}
-            setBookingLoc={setBookingLoc}
-            addToast={addToast}
-          />
-        )}
-
-        {currentTab === 'combos' && (
-          <CombosSection
-            COMBOS={COMBOS}
-            setSelectedProduct={setSelectedProduct}
-            handleAddToCart={handleAddToCart}
-          />
-        )}
-
-        {currentTab === 'profile' && (
-          <StudentProfileSection
-            currentUser={currentUser}
-            setCurrentUser={setCurrentUser}
-            studentDept={studentDept}
-            setStudentDept={setStudentDept}
-            studentSem={studentSem}
-            setStudentSem={setStudentSem}
-            studentBlock={studentBlock}
-            setStudentBlock={setStudentBlock}
-            studentRoom={studentRoom}
-            setStudentRoom={setStudentRoom}
-            walletBalance={walletBalance}
-            profileAddresses={profileAddresses}
-            setProfileAddresses={setProfileAddresses}
-            newProfileAddress={newProfileAddress}
-            setNewProfileAddress={setNewProfileAddress}
-            orders={orders}
-            addToast={addToast}
-            setLoginOpen={setLoginOpen}
-          />
-        )}
-
-        {currentTab === 'admin' && (
-          <AdminDashboard
-            adminActiveTab={adminActiveTab}
-            setAdminActiveTab={setAdminActiveTab}
-          />
-        )}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
 
         <AIChatDrawer
           aiChatOpen={aiChatOpen}

@@ -1,40 +1,43 @@
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { addressSchema, cardPaymentSchema, upiPaymentSchema } from '../../utils/validationSchemas';
+import { useCartStore } from '../../store/useCartStore';
+import { useUserStore } from '../../store/useUserStore';
+import { useOrderStore } from '../../store/useOrderStore';
+import { useUIStore } from '../../store/useUIStore';
 
-export default function CheckoutModal({
-  checkoutOpen,
-  setCheckoutOpen,
-  cart,
-  subtotal,
-  deliveryCharge,
-  profileAddresses = [],
-  setProfileAddresses,
-  walletBalance = 450,
-  onPlaceOrder,
-  setTrackOpen,
-  setTrackInput,
-  addToast
-}) {
+export default function CheckoutModal(props) {
+  const storeCart = useCartStore((s) => s.cart);
+  const clearCart = useCartStore((s) => s.clearCart);
+  const storeSubtotal = useCartStore((s) => s.getSubtotal());
+  const storeDeliveryCharge = useCartStore((s) => s.getDeliveryCharge());
+
+  const storeAddresses = useUserStore((s) => s.profileAddresses);
+  const storeAddAddress = useUserStore((s) => s.addAddress);
+  const storeWalletBalance = useUserStore((s) => s.walletBalance);
+
+  const storePlaceOrder = useOrderStore((s) => s.placeOrder);
+  const storeSetTrackInput = useOrderStore((s) => s.setTrackInput);
+
+  const checkoutOpen = props.checkoutOpen !== undefined ? props.checkoutOpen : useUIStore((s) => s.checkoutOpen);
+  const setCheckoutOpen = props.setCheckoutOpen || useUIStore((s) => s.setCheckoutOpen);
+  const setTrackOpen = props.setTrackOpen || useUIStore((s) => s.setTrackOpen);
+  const addToast = props.addToast || useUIStore((s) => s.addToast);
+
+  const cart = props.cart || storeCart;
+  const subtotal = props.subtotal !== undefined ? props.subtotal : storeSubtotal;
+  const deliveryCharge = props.deliveryCharge !== undefined ? props.deliveryCharge : storeDeliveryCharge;
+  const walletBalance = props.walletBalance !== undefined ? props.walletBalance : storeWalletBalance;
+  const profileAddresses = props.profileAddresses || storeAddresses;
+
   const [step, setStep] = useState(1); // 1: Address, 2: Payment, 3: Review, 4: Success
   const [selectedAddressIndex, setSelectedAddressIndex] = useState(0);
   const [showAddForm, setShowAddForm] = useState(false);
-  const [newAddr, setNewAddr] = useState({
-    fullName: '',
-    phone: '',
-    block: 'Hostel Block H-4',
-    room: '',
-    landmark: ''
-  });
 
-  // Payment states
+  // Payment method choices
   const [paymentMethod, setPaymentMethod] = useState('upi'); // 'upi' | 'card' | 'wallet' | 'cod' | 'netbanking'
   const [upiOption, setUpiOption] = useState('gpay'); // 'gpay' | 'phonepe' | 'paytm' | 'custom'
-  const [upiId, setUpiId] = useState('');
-  const [cardInfo, setCardInfo] = useState({
-    number: '',
-    expiry: '',
-    cvv: '',
-    name: ''
-  });
   const [selectedBank, setSelectedBank] = useState('HDFC Bank');
 
   // Coupon states
@@ -47,6 +50,53 @@ export default function CheckoutModal({
   const [isProcessing, setIsProcessing] = useState(false);
   const [placedOrderInfo, setPlacedOrderInfo] = useState(null);
 
+  // --- REACT HOOK FORM + ZOD RESOLVERS ---
+  // 1. Address Form
+  const {
+    register: registerAddr,
+    handleSubmit: handleSubmitAddr,
+    formState: { errors: addrErrors },
+    reset: resetAddr
+  } = useForm({
+    resolver: zodResolver(addressSchema),
+    defaultValues: {
+      fullName: '',
+      phone: '',
+      block: 'Hostel Block H-4',
+      room: '',
+      landmark: ''
+    }
+  });
+
+  // 2. Card Form
+  const {
+    register: registerCard,
+    formState: { errors: cardErrors },
+    watch: watchCard
+  } = useForm({
+    resolver: zodResolver(cardPaymentSchema),
+    mode: 'onChange',
+    defaultValues: {
+      cardNumber: '',
+      cardExpiry: '',
+      cardCvv: '',
+      cardName: ''
+    }
+  });
+
+  // 3. Custom UPI Form
+  const {
+    register: registerUpi,
+    formState: { errors: upiErrors },
+    watch: watchUpi
+  } = useForm({
+    resolver: zodResolver(upiPaymentSchema),
+    mode: 'onChange',
+    defaultValues: {
+      upiId: ''
+    }
+  });
+
   if (!checkoutOpen) return null;
 
   // Calculate pricing
@@ -54,26 +104,46 @@ export default function CheckoutModal({
   const rawTotal = subtotal + deliveryCharge + platformFee;
   const finalTotal = Math.max(0, rawTotal - couponDiscount);
 
-  // Address handling
+  // Addresses list
   const addresses = profileAddresses.length > 0 ? profileAddresses : [
     'Hostel Block H-4, Room 302',
     'Central Library, Cubicle 12'
   ];
 
-  const handleAddNewAddress = (e) => {
-    e.preventDefault();
-    if (!newAddr.room.trim()) {
-      addToast('Please enter room number or desk details');
-      return;
-    }
-    const formatted = `${newAddr.block}, Room ${newAddr.room}${newAddr.landmark ? ` (${newAddr.landmark})` : ''}`;
-    if (setProfileAddresses) {
-      setProfileAddresses(prev => [...prev, formatted]);
+  // Address Submit Handler
+  const onSaveNewAddress = (data) => {
+    const formatted = `${data.block}, Room ${data.room}${data.landmark ? ` (${data.landmark})` : ''}`;
+    if (props.setProfileAddresses) {
+      props.setProfileAddresses(prev => [...prev, formatted]);
+    } else {
+      storeAddAddress(formatted);
     }
     setSelectedAddressIndex(addresses.length);
     setShowAddForm(false);
-    setNewAddr({ fullName: '', phone: '', block: 'Hostel Block H-4', room: '', landmark: '' });
-    addToast('New delivery address added!');
+    resetAddr();
+    addToast(`✓ New delivery address added: ${data.block}, Room ${data.room}`);
+  };
+
+  // Step 2 to Step 3 Validation
+  const handleProceedToReview = () => {
+    if (paymentMethod === 'upi' && upiOption === 'custom') {
+      const upiVal = watchUpi('upiId');
+      const isValid = /^[\w.-]+@[\w.-]+$/.test(upiVal);
+      if (!isValid) {
+        addToast('Please enter a valid UPI ID (e.g. name@upi)', true);
+        return;
+      }
+    } else if (paymentMethod === 'card') {
+      const cNum = watchCard('cardNumber');
+      const cExp = watchCard('cardExpiry');
+      const cCvv = watchCard('cardCvv');
+      const cName = watchCard('cardName');
+      if (!cNum || !cExp || !cCvv || !cName || Object.keys(cardErrors).length > 0) {
+        addToast('Please fix card details errors before proceeding', true);
+        return;
+      }
+    }
+    setStep(3);
   };
 
   // Coupon application
@@ -137,16 +207,22 @@ export default function CheckoutModal({
         estTime: '10 - 15 mins'
       };
 
-      onPlaceOrder(orderData);
+      if (props.onPlaceOrder) {
+        props.onPlaceOrder(orderData);
+      } else {
+        storePlaceOrder(orderData);
+        clearCart();
+        addToast(`🎉 Order #${orderData.id} placed successfully!`);
+      }
+
       setPlacedOrderInfo(orderData);
       setIsProcessing(false);
-      setStep(4); // Move to Success screen
+      setStep(4);
     }, 1500);
   };
 
   const handleClose = () => {
     setCheckoutOpen(false);
-    // Reset modal state after close animation
     setTimeout(() => {
       setStep(1);
       setPlacedOrderInfo(null);
@@ -154,8 +230,10 @@ export default function CheckoutModal({
   };
 
   const handleTrackNewOrder = () => {
-    if (placedOrderInfo && setTrackInput && setTrackOpen) {
-      setTrackInput(placedOrderInfo.id);
+    if (placedOrderInfo) {
+      if (props.setTrackInput) props.setTrackInput(placedOrderInfo.id);
+      else storeSetTrackInput(placedOrderInfo.id);
+      
       setCheckoutOpen(false);
       setTrackOpen(true);
     }
@@ -230,15 +308,38 @@ export default function CheckoutModal({
                   + Add New Hostel / Campus Location
                 </button>
               ) : (
-                <form className="add-address-form" onSubmit={handleAddNewAddress}>
+                <form className="add-address-form" onSubmit={handleSubmitAddr(onSaveNewAddress)} noValidate>
                   <h5>Add New Delivery Location</h5>
+                  
+                  <div style={{ marginBottom: '0.65rem' }}>
+                    <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Student Full Name</label>
+                    <input 
+                      type="text"
+                      placeholder="e.g. Rahul Sharma"
+                      {...registerAddr('fullName')}
+                      className={`modal-input ${addrErrors.fullName ? 'input-invalid' : ''}`}
+                    />
+                    {addrErrors.fullName && <span className="field-error">{addrErrors.fullName.message}</span>}
+                  </div>
+
                   <div className="form-grid">
                     <div>
-                      <label>Hostel / Building Block</label>
+                      <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Mobile Number (10 Digits)</label>
+                      <input 
+                        type="tel"
+                        placeholder="e.g. 9876543210"
+                        maxLength={10}
+                        {...registerAddr('phone')}
+                        className={`modal-input ${addrErrors.phone ? 'input-invalid' : ''}`}
+                      />
+                      {addrErrors.phone && <span className="field-error">{addrErrors.phone.message}</span>}
+                    </div>
+
+                    <div>
+                      <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Hostel / Building Block</label>
                       <select 
-                        value={newAddr.block} 
-                        onChange={(e) => setNewAddr({ ...newAddr, block: e.target.value })}
-                        className="modal-input"
+                        {...registerAddr('block')}
+                        className={`modal-input ${addrErrors.block ? 'input-invalid' : ''}`}
                       >
                         <option value="Hostel Block H-1">Hostel Block H-1</option>
                         <option value="Hostel Block H-2">Hostel Block H-2</option>
@@ -250,32 +351,36 @@ export default function CheckoutModal({
                         <option value="Academic Block A">Academic Block A</option>
                         <option value="Campus Canteen Area">Campus Canteen Area</option>
                       </select>
+                      {addrErrors.block && <span className="field-error">{addrErrors.block.message}</span>}
                     </div>
+                  </div>
+
+                  <div className="form-grid" style={{ marginTop: '0.65rem' }}>
                     <div>
-                      <label>Room / Desk / Cubicle No.</label>
+                      <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Room / Desk / Cubicle No.</label>
                       <input 
                         type="text" 
                         placeholder="e.g. Room 302 or Desk 14" 
-                        value={newAddr.room} 
-                        onChange={(e) => setNewAddr({ ...newAddr, room: e.target.value })}
+                        {...registerAddr('room')}
+                        className={`modal-input ${addrErrors.room ? 'input-invalid' : ''}`}
+                      />
+                      {addrErrors.room && <span className="field-error">{addrErrors.room.message}</span>}
+                    </div>
+
+                    <div>
+                      <label style={{ fontSize: '0.8rem', fontWeight: 600 }}>Landmark (Optional)</label>
+                      <input 
+                        type="text" 
+                        placeholder="e.g. Near West Staircase" 
+                        {...registerAddr('landmark')}
                         className="modal-input" 
-                        required 
                       />
                     </div>
                   </div>
-                  <div style={{ marginTop: '0.5rem' }}>
-                    <label>Landmark (Optional)</label>
-                    <input 
-                      type="text" 
-                      placeholder="e.g. Near West Staircase / 3rd Floor" 
-                      value={newAddr.landmark} 
-                      onChange={(e) => setNewAddr({ ...newAddr, landmark: e.target.value })}
-                      className="modal-input" 
-                    />
-                  </div>
-                  <div className="form-actions" style={{ marginTop: '0.75rem', display: 'flex', gap: '0.5rem' }}>
-                    <button type="submit" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Save & Select</button>
-                    <button type="button" className="btn btn-secondary" style={{ padding: '0.5rem 1rem' }} onClick={() => setShowAddForm(false)}>Cancel</button>
+
+                  <div className="form-actions" style={{ marginTop: '0.85rem', display: 'flex', gap: '0.5rem' }}>
+                    <button type="submit" className="btn btn-primary" style={{ padding: '0.55rem 1.25rem' }}>Save & Select Address</button>
+                    <button type="button" className="btn btn-secondary" style={{ padding: '0.55rem 1rem' }} onClick={() => setShowAddForm(false)}>Cancel</button>
                   </div>
                 </form>
               )}
@@ -354,11 +459,11 @@ export default function CheckoutModal({
                         <div style={{ marginTop: '0.75rem' }}>
                           <input 
                             type="text" 
-                            className="modal-input"
                             placeholder="Enter VPA / UPI ID (e.g. mobile@upi)" 
-                            value={upiId}
-                            onChange={(e) => setUpiId(e.target.value)}
+                            {...registerUpi('upiId')}
+                            className={`modal-input ${upiErrors.upiId ? 'input-invalid' : ''}`}
                           />
+                          {upiErrors.upiId && <span className="field-error">{upiErrors.upiId.message}</span>}
                         </div>
                       )}
                     </div>
@@ -417,31 +522,48 @@ export default function CheckoutModal({
 
                   {paymentMethod === 'card' && (
                     <div className="payment-sub-content">
-                      <input 
-                        type="text" 
-                        className="modal-input" 
-                        placeholder="Card Number (16 digits)" 
-                        maxLength={19}
-                        value={cardInfo.number}
-                        onChange={(e) => setCardInfo({ ...cardInfo, number: e.target.value })}
-                      />
-                      <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+                      <div style={{ marginBottom: '0.5rem' }}>
                         <input 
                           type="text" 
-                          className="modal-input" 
-                          placeholder="MM/YY" 
-                          maxLength={5}
-                          value={cardInfo.expiry}
-                          onChange={(e) => setCardInfo({ ...cardInfo, expiry: e.target.value })}
+                          placeholder="Cardholder Name" 
+                          {...registerCard('cardName')}
+                          className={`modal-input ${cardErrors.cardName ? 'input-invalid' : ''}`}
                         />
+                        {cardErrors.cardName && <span className="field-error">{cardErrors.cardName.message}</span>}
+                      </div>
+
+                      <div style={{ marginBottom: '0.5rem' }}>
                         <input 
-                          type="password" 
-                          className="modal-input" 
-                          placeholder="CVV" 
-                          maxLength={4}
-                          value={cardInfo.cvv}
-                          onChange={(e) => setCardInfo({ ...cardInfo, cvv: e.target.value })}
+                          type="text" 
+                          placeholder="Card Number (16 digits)" 
+                          maxLength={19}
+                          {...registerCard('cardNumber')}
+                          className={`modal-input ${cardErrors.cardNumber ? 'input-invalid' : ''}`}
                         />
+                        {cardErrors.cardNumber && <span className="field-error">{cardErrors.cardNumber.message}</span>}
+                      </div>
+
+                      <div style={{ display: 'flex', gap: '0.5rem' }}>
+                        <div style={{ flex: 1 }}>
+                          <input 
+                            type="text" 
+                            placeholder="Expiry (MM/YY)" 
+                            maxLength={5}
+                            {...registerCard('cardExpiry')}
+                            className={`modal-input ${cardErrors.cardExpiry ? 'input-invalid' : ''}`}
+                          />
+                          {cardErrors.cardExpiry && <span className="field-error">{cardErrors.cardExpiry.message}</span>}
+                        </div>
+                        <div style={{ flex: 1 }}>
+                          <input 
+                            type="password" 
+                            placeholder="CVV" 
+                            maxLength={4}
+                            {...registerCard('cardCvv')}
+                            className={`modal-input ${cardErrors.cardCvv ? 'input-invalid' : ''}`}
+                          />
+                          {cardErrors.cardCvv && <span className="field-error">{cardErrors.cardCvv.message}</span>}
+                        </div>
                       </div>
                     </div>
                   )}
@@ -511,7 +633,7 @@ export default function CheckoutModal({
                 <button className="btn btn-secondary" onClick={() => setStep(1)}>← Back</button>
                 <button 
                   className="btn btn-primary btn-next-step"
-                  onClick={() => setStep(3)}
+                  onClick={handleProceedToReview}
                 >
                   Review Order →
                 </button>
@@ -573,7 +695,7 @@ export default function CheckoutModal({
 
                 {/* Right Column: Pricing & Coupon */}
                 <div className="review-right">
-                  {/* Coupon Code Section */}
+                  {/* Coupon Box */}
                   <div className="coupon-box">
                     <label className="coupon-label">🏷️ Have a Campus Coupon?</label>
                     {!appliedCoupon ? (
